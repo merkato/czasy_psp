@@ -1,0 +1,203 @@
+<!DOCTYPE model>
+<Option type="Map">
+  <Option name="children" type="Map">
+    <Option name="native:reprojectlayer_1" type="Map">
+      <Option value="true" name="active" type="bool"/>
+      <Option name="alg_config"/>
+      <Option value="native:reprojectlayer" name="alg_id" type="QString"/>
+      <Option value="Przelicz układ współrzędnych warstwy" name="component_description" type="QString"/>
+      <Option value="594" name="component_pos_x" type="double"/>
+      <Option value="303" name="component_pos_y" type="double"/>
+      <Option name="dependencies"/>
+      <Option value="native:reprojectlayer_1" name="id" type="QString"/>
+      <Option name="outputs" type="Map">
+        <Option name="Sieć drogowa - metodyka planu" type="Map">
+          <Option value="native:reprojectlayer_1" name="child_id" type="QString"/>
+          <Option value="Sieć drogowa - metodyka planu" name="component_description" type="QString"/>
+          <Option value="794" name="component_pos_x" type="double"/>
+          <Option value="348" name="component_pos_y" type="double"/>
+          <Option name="default_value" type="invalid"/>
+          <Option value="false" name="mandatory" type="bool"/>
+          <Option value="Sieć drogowa - metodyka planu" name="name" type="QString"/>
+          <Option value="OUTPUT" name="output_name" type="QString"/>
+        </Option>
+      </Option>
+      <Option value="true" name="outputs_collapsed" type="bool"/>
+      <Option value="true" name="parameters_collapsed" type="bool"/>
+      <Option name="params" type="Map">
+        <Option name="INPUT" type="List">
+          <Option type="Map">
+            <Option value="qgis:refactorfields_1" name="child_id" type="QString"/>
+            <Option value="OUTPUT" name="output_name" type="QString"/>
+            <Option value="1" name="source" type="int"/>
+          </Option>
+        </Option>
+        <Option name="TARGET_CRS" type="List">
+          <Option type="Map">
+            <Option value="2" name="source" type="int"/>
+            <Option name="static_value" type="QgsCoordinateReferenceSystem">
+              <spatialrefsys>
+                <proj4>+proj=tmerc +lat_0=0 +lon_0=19 +k=0.9993 +x_0=500000 +y_0=-5300000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs</proj4>
+                <srsid>171</srsid>
+                <srid>2180</srid>
+                <authid>EPSG:2180</authid>
+                <description>ETRS89 / Poland CS92</description>
+                <projectionacronym>tmerc</projectionacronym>
+                <ellipsoidacronym>GRS80</ellipsoidacronym>
+                <geographicflag>false</geographicflag>
+              </spatialrefsys>
+            </Option>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option name="qgis:refactorfields_1" type="Map">
+      <Option value="true" name="active" type="bool"/>
+      <Option name="alg_config"/>
+      <Option value="qgis:refactorfields" name="alg_id" type="QString"/>
+      <Option value="Zmień pola" name="component_description" type="QString"/>
+      <Option value="425" name="component_pos_x" type="double"/>
+      <Option value="176" name="component_pos_y" type="double"/>
+      <Option name="dependencies"/>
+      <Option value="qgis:refactorfields_1" name="id" type="QString"/>
+      <Option name="outputs"/>
+      <Option value="true" name="outputs_collapsed" type="bool"/>
+      <Option value="true" name="parameters_collapsed" type="bool"/>
+      <Option name="params" type="Map">
+        <Option name="FIELDS_MAPPING" type="List">
+          <Option type="Map">
+            <Option value="2" name="source" type="int"/>
+            <Option name="static_value" type="List">
+              <Option type="Map">
+                <Option value="&quot;fid&quot;" name="expression" type="QString"/>
+                <Option value="0" name="length" type="int"/>
+                <Option value="fid" name="name" type="QString"/>
+                <Option value="0" name="precision" type="int"/>
+                <Option value="4" name="type" type="int"/>
+              </Option>
+              <Option type="Map">
+                <Option value="&quot;osm_id&quot;" name="expression" type="QString"/>
+                <Option value="10" name="length" type="int"/>
+                <Option value="osm_id" name="name" type="QString"/>
+                <Option value="0" name="precision" type="int"/>
+                <Option value="10" name="type" type="int"/>
+              </Option>
+              <Option type="Map">
+                <Option value="&quot;code&quot;" name="expression" type="QString"/>
+                <Option value="0" name="length" type="int"/>
+                <Option value="code" name="name" type="QString"/>
+                <Option value="0" name="precision" type="int"/>
+                <Option value="2" name="type" type="int"/>
+              </Option>
+              <Option type="Map">
+                <Option value="&quot;fclass&quot;" name="expression" type="QString"/>
+                <Option value="28" name="length" type="int"/>
+                <Option value="fclass" name="name" type="QString"/>
+                <Option value="0" name="precision" type="int"/>
+                <Option value="10" name="type" type="int"/>
+              </Option>
+              <Option type="Map">
+                <Option value="&quot;name&quot;" name="expression" type="QString"/>
+                <Option value="100" name="length" type="int"/>
+                <Option value="name" name="name" type="QString"/>
+                <Option value="0" name="precision" type="int"/>
+                <Option value="10" name="type" type="int"/>
+              </Option>
+              <Option type="Map">
+                <Option value="&quot;ref&quot;" name="expression" type="QString"/>
+                <Option value="20" name="length" type="int"/>
+                <Option value="ref" name="name" type="QString"/>
+                <Option value="0" name="precision" type="int"/>
+                <Option value="10" name="type" type="int"/>
+              </Option>
+              <Option type="Map">
+                <Option value="&quot;oneway&quot;" name="expression" type="QString"/>
+                <Option value="1" name="length" type="int"/>
+                <Option value="oneway" name="name" type="QString"/>
+                <Option value="0" name="precision" type="int"/>
+                <Option value="10" name="type" type="int"/>
+              </Option>
+              <Option type="Map">
+                <Option value="&quot;maxspeed&quot;" name="expression" type="QString"/>
+                <Option value="0" name="length" type="int"/>
+                <Option value="maxspeed" name="name" type="QString"/>
+                <Option value="0" name="precision" type="int"/>
+                <Option value="2" name="type" type="int"/>
+              </Option>
+              <Option type="Map">
+                <Option value="&quot;layer&quot;" name="expression" type="QString"/>
+                <Option value="0" name="length" type="int"/>
+                <Option value="layer" name="name" type="QString"/>
+                <Option value="0" name="precision" type="int"/>
+                <Option value="4" name="type" type="int"/>
+              </Option>
+              <Option type="Map">
+                <Option value="&quot;bridge&quot;" name="expression" type="QString"/>
+                <Option value="1" name="length" type="int"/>
+                <Option value="bridge" name="name" type="QString"/>
+                <Option value="0" name="precision" type="int"/>
+                <Option value="10" name="type" type="int"/>
+              </Option>
+              <Option type="Map">
+                <Option value="&quot;tunnel&quot;" name="expression" type="QString"/>
+                <Option value="1" name="length" type="int"/>
+                <Option value="tunnel" name="name" type="QString"/>
+                <Option value="0" name="precision" type="int"/>
+                <Option value="10" name="type" type="int"/>
+              </Option>
+              <Option type="Map">
+                <Option value="CASE &#xa;  WHEN &quot;fclass&quot; IN ('trunk','motorway') THEN '60'&#xa;  WHEN &quot;fclass&quot; IN ('primary', 'secondary') THEN '50'&#xa;  ELSE '40'&#xa;END&#xa;" name="expression" type="QString"/>
+                <Option value="0" name="length" type="int"/>
+                <Option value="vmax" name="name" type="QString"/>
+                <Option value="0" name="precision" type="int"/>
+                <Option value="2" name="type" type="int"/>
+              </Option>
+            </Option>
+          </Option>
+        </Option>
+        <Option name="INPUT" type="List">
+          <Option type="Map">
+            <Option value="siedrogowa" name="parameter_name" type="QString"/>
+            <Option value="0" name="source" type="int"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+  </Option>
+  <Option name="help"/>
+  <Option name="modelVariables"/>
+  <Option value="Analizy sieciowe" name="model_group" type="QString"/>
+  <Option value="Preprocessing Geofabrik (metodyka budowy planu sieci)" name="model_name" type="QString"/>
+  <Option name="parameterDefinitions" type="Map">
+    <Option name="native:reprojectlayer_1:Sieć drogowa - metodyka planu" type="Map">
+      <Option value="true" name="create_by_default" type="bool"/>
+      <Option value="-1" name="data_type" type="int"/>
+      <Option name="default" type="invalid"/>
+      <Option value="Sieć drogowa - metodyka planu" name="description" type="QString"/>
+      <Option value="0" name="flags" type="int"/>
+      <Option name="metadata"/>
+      <Option value="native:reprojectlayer_1:Sieć drogowa - metodyka planu" name="name" type="QString"/>
+      <Option value="sink" name="parameter_type" type="QString"/>
+      <Option value="true" name="supports_non_file_outputs" type="bool"/>
+    </Option>
+    <Option name="siedrogowa" type="Map">
+      <Option name="data_types" type="List">
+        <Option value="1" type="int"/>
+      </Option>
+      <Option name="default" type="invalid"/>
+      <Option value="Sieć drogowa" name="description" type="QString"/>
+      <Option value="0" name="flags" type="int"/>
+      <Option name="metadata"/>
+      <Option value="siedrogowa" name="name" type="QString"/>
+      <Option value="vector" name="parameter_type" type="QString"/>
+    </Option>
+  </Option>
+  <Option name="parameters" type="Map">
+    <Option name="siedrogowa" type="Map">
+      <Option value="siedrogowa" name="component_description" type="QString"/>
+      <Option value="179" name="component_pos_x" type="double"/>
+      <Option value="293" name="component_pos_y" type="double"/>
+      <Option value="siedrogowa" name="name" type="QString"/>
+    </Option>
+  </Option>
+</Option>
