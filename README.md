@@ -19,12 +19,16 @@ W repozytorium znajdują się modele QGIS 3 przygotowujące pliki dostarczane pr
 Zasada działania preprocessingu opisana jest przez następujący graf:
 ![Przygotowanie danych Geofabrik](preprocessing_geofabrik_shape_autorski.png)
 
-## Czas dojazdu
+Dodatkowo przygotowane zostały wersje tego modelu i algorytmu dla różnych parametrów prędkościowych, zależnie od przyjętej metodyki.
 
 ## Obszar chroniony
 
 Zasada działania modelu opisana na grafie:
 ![Wyznaczanie obszaru chronionego wielu jednostek](obszar_chroniony_adm.png)
-## Pozostałe
 
+## Procent populacji, procent powierzchni
 
+Zasada działania modelu opisana na grafie:
+![Wyznaczanie procenta populacji](procent_populacji.png)
+
+Model do poprawnego działania wymaga warstwy wektorowej obwodów spisowych lub siatki kilometrowej (PD_BREC, PD_GRID).

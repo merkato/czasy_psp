@@ -6,16 +6,16 @@
       <Option name="alg_config"/>
       <Option value="native:clip" name="alg_id" type="QString"/>
       <Option value="Przytnij" name="component_description" type="QString"/>
-      <Option value="737" name="component_pos_x" type="double"/>
-      <Option value="487" name="component_pos_y" type="double"/>
+      <Option value="641" name="component_pos_x" type="double"/>
+      <Option value="463" name="component_pos_y" type="double"/>
       <Option name="dependencies"/>
       <Option value="native:clip_1" name="id" type="QString"/>
       <Option name="outputs" type="Map">
         <Option name="Obszary chronione" type="Map">
           <Option value="native:clip_1" name="child_id" type="QString"/>
           <Option value="Obszary chronione" name="component_description" type="QString"/>
-          <Option value="741" name="component_pos_x" type="double"/>
-          <Option value="578" name="component_pos_y" type="double"/>
+          <Option value="642" name="component_pos_x" type="double"/>
+          <Option value="549" name="component_pos_y" type="double"/>
           <Option name="default_value" type="invalid"/>
           <Option value="false" name="mandatory" type="bool"/>
           <Option value="Obszary chronione" name="name" type="QString"/>
@@ -45,8 +45,8 @@
       <Option name="alg_config"/>
       <Option value="native:dissolve" name="alg_id" type="QString"/>
       <Option value="Agreguj" name="component_description" type="QString"/>
-      <Option value="692" name="component_pos_x" type="double"/>
-      <Option value="383" name="component_pos_y" type="double"/>
+      <Option value="638" name="component_pos_x" type="double"/>
+      <Option value="361" name="component_pos_y" type="double"/>
       <Option name="dependencies"/>
       <Option value="native:dissolve_1" name="id" type="QString"/>
       <Option name="outputs"/>
@@ -73,8 +73,8 @@
       <Option name="alg_config"/>
       <Option value="qgis:voronoipolygons" name="alg_id" type="QString"/>
       <Option value="Poligony Woronoja" name="component_description" type="QString"/>
-      <Option value="586" name="component_pos_x" type="double"/>
-      <Option value="282" name="component_pos_y" type="double"/>
+      <Option value="636" name="component_pos_x" type="double"/>
+      <Option value="253" name="component_pos_y" type="double"/>
       <Option name="dependencies"/>
       <Option value="qgis:voronoipolygons_1" name="id" type="QString"/>
       <Option name="outputs"/>
@@ -135,8 +135,8 @@
         </Option>
         <Option name="ID_FIELD" type="List">
           <Option type="Map">
-            <Option value="2" name="source" type="int"/>
-            <Option value="OSP" name="static_value" type="QString"/>
+            <Option value="idobszaru" name="parameter_name" type="QString"/>
+            <Option value="0" name="source" type="int"/>
           </Option>
         </Option>
         <Option name="INPUT" type="List">
@@ -201,6 +201,15 @@
   <Option value="Analizy sieciowe" name="model_group" type="QString"/>
   <Option value="Obszary chronione (gr. adm.)" name="model_name" type="QString"/>
   <Option name="parameterDefinitions" type="Map">
+    <Option name="idobszaru" type="Map">
+      <Option value="fid" name="default" type="QString"/>
+      <Option value="Pole identyfikatora (w tabeli lokalizacji jednostek)" name="description" type="QString"/>
+      <Option value="0" name="flags" type="int"/>
+      <Option name="metadata"/>
+      <Option value="false" name="multiline" type="bool"/>
+      <Option value="idobszaru" name="name" type="QString"/>
+      <Option value="string" name="parameter_type" type="QString"/>
+    </Option>
     <Option name="lokalizacjajednostek" type="Map">
       <Option name="data_types" type="List">
         <Option value="0" type="int"/>
@@ -247,22 +256,28 @@
     </Option>
   </Option>
   <Option name="parameters" type="Map">
+    <Option name="idobszaru" type="Map">
+      <Option value="idobszaru" name="component_description" type="QString"/>
+      <Option value="677" name="component_pos_x" type="double"/>
+      <Option value="40" name="component_pos_y" type="double"/>
+      <Option value="idobszaru" name="name" type="QString"/>
+    </Option>
     <Option name="lokalizacjajednostek" type="Map">
       <Option value="lokalizacjajednostek" name="component_description" type="QString"/>
-      <Option value="415" name="component_pos_x" type="double"/>
-      <Option value="54" name="component_pos_y" type="double"/>
+      <Option value="471" name="component_pos_x" type="double"/>
+      <Option value="40" name="component_pos_y" type="double"/>
       <Option value="lokalizacjajednostek" name="name" type="QString"/>
     </Option>
     <Option name="obszarbadawczy" type="Map">
       <Option value="obszarbadawczy" name="component_description" type="QString"/>
-      <Option value="400" name="component_pos_x" type="double"/>
-      <Option value="386" name="component_pos_y" type="double"/>
+      <Option value="219" name="component_pos_x" type="double"/>
+      <Option value="340" name="component_pos_y" type="double"/>
       <Option value="obszarbadawczy" name="name" type="QString"/>
     </Option>
     <Option name="sie" type="Map">
       <Option value="sie" name="component_description" type="QString"/>
-      <Option value="181" name="component_pos_x" type="double"/>
-      <Option value="98" name="component_pos_y" type="double"/>
+      <Option value="219" name="component_pos_x" type="double"/>
+      <Option value="275" name="component_pos_y" type="double"/>
       <Option value="sie" name="name" type="QString"/>
     </Option>
   </Option>
