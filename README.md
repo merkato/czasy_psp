@@ -4,7 +4,7 @@ Izochrona, czas dojazdu i obszar chroniony w QGIS - modele i skrypty
 ## Wymagania
 
 * QGIS 3.4 LTR
-* wtyczka QNEAT3, wraz z bibliotekami matplotlib, numpy (python3)
+* wtyczka QNEAT3 (zmodyfikowana zgodnie z repozytorium https://github.com/merkato/QNEAT3), wraz z bibliotekami matplotlib, numpy (python3)
 
 ## Źródła danych
 * dane wektorowe o sieci drogowej
@@ -14,7 +14,7 @@ Izochrona, czas dojazdu i obszar chroniony w QGIS - modele i skrypty
 
 ## Przygotowanie danych
 
-W repozytorium znajdują się modele QGIS 3 przygotowujące pliki dostarczane przez Geofabrik.de lub z danych BDOT10k. Należy wywołać model, wskazując oryginalną warstwę danych, a następnie wynikową warstwę danych zapisać na dysk.
+W repozytorium znajdują się modele QGIS 3 przygotowujące pliki dostarczane przez Geofabrik.de (shapefile) lub z danych BDOT10k. Należy wywołać model, wskazując oryginalną warstwę danych. Wynik działania modelu zaleca się zachować na dysku, na wypadek "wywrotki".
 
 Zasada działania preprocessingu opisana jest przez następujący graf:
 ![Przygotowanie danych Geofabrik](preprocessing_geofabrik_shape_autorski.png)
@@ -26,7 +26,9 @@ Dodatkowo przygotowane zostały wersje tego modelu i algorytmu dla różnych par
 Zasada działania modelu opisana na grafie:
 ![Wyznaczanie obszaru chronionego wielu jednostek](obszar_chroniony_adm.png)
 
-Model wymaga podania warstwy sieciowej w CRS kartezjańskim (np. PL-1992 EPSG:2180), warstwy punktowej z lokalizacją jednostek, warstwy poligonowej ograniczającej obszar analizy (np. obszar administracyjny KP PSP), nazwy pola w którym przechowywany jest identyfikator punktu startowego (np. nazwa jednostki), nazwy pola w którym przechowywana jest informacja o przewidywanym czasie dysponowania (przyjmowany na podstawie metodyki, lub średnich czasów wyjazdu jednostki w SWD-ST).  
+Model wymaga podania warstwy sieciowej w CRS kartezjańskim (np. PL-1992 EPSG:2180), warstwy punktowej z lokalizacją jednostek, warstwy poligonowej ograniczającej obszar analizy (np. obszar administracyjny KP PSP), nazwy pola w którym przechowywany jest identyfikator punktu startowego (np. nazwa jednostki), nazwy pola w którym przechowywana jest informacja o przewidywanym czasie dysponowania (przyjmowany na podstawie metodyki, lub średnich czasów wyjazdu jednostki w SWD-ST).
+
+![Przykładowy formularz i wynik działania algorytmu](obszar_chroniony_adm_poly.png)
 
 ## Procent populacji, procent powierzchni
 
