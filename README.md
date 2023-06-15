@@ -26,6 +26,8 @@ Dodatkowo przygotowane zostały wersje tego modelu i algorytmu dla różnych par
 Zasada działania modelu opisana na grafie:
 ![Wyznaczanie obszaru chronionego wielu jednostek](obszar_chroniony_adm.png)
 
+Model wymaga podania warstwy sieciowej w CRS kartezjańskim (np. PL-1992 EPSG:2180), warstwy punktowej z lokalizacją jednostek, warstwy poligonowej ograniczającej obszar analizy (np. obszar administracyjny KP PSP), nazwy pola w którym przechowywany jest identyfikator punktu startowego (np. nazwa jednostki), nazwy pola w którym przechowywana jest informacja o przewidywanym czasie dysponowania (przyjmowany na podstawie metodyki, lub średnich czasów wyjazdu jednostki w SWD-ST).  
+
 ## Procent populacji, procent powierzchni
 
 Zasada działania modelu opisana na grafie:

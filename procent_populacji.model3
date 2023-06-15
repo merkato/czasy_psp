@@ -1,579 +1,927 @@
 <!DOCTYPE model>
 <Option type="Map">
-  <Option name="children" type="Map">
-    <Option name="native:calculatevectoroverlaps_1" type="Map">
-      <Option value="true" name="active" type="bool"/>
+  <Option type="Map" name="children">
+    <Option type="Map" name="native:calculatevectoroverlaps_1">
+      <Option type="bool" name="active" value="true"/>
       <Option name="alg_config"/>
-      <Option value="native:calculatevectoroverlaps" name="alg_id" type="QString"/>
-      <Option value="Analiza pokrycia" name="component_description" type="QString"/>
-      <Option value="446" name="component_pos_x" type="double"/>
-      <Option value="524" name="component_pos_y" type="double"/>
+      <Option type="QString" name="alg_id" value="native:calculatevectoroverlaps"/>
+      <Option type="QString" name="color" value=""/>
+      <Option type="Map" name="comment">
+        <Option type="QString" name="color" value=""/>
+        <Option type="QString" name="component_description" value=""/>
+        <Option type="double" name="component_height" value="30"/>
+        <Option type="double" name="component_pos_x" value="0"/>
+        <Option type="double" name="component_pos_y" value="0"/>
+        <Option type="double" name="component_width" value="200"/>
+        <Option type="bool" name="outputs_collapsed" value="false"/>
+        <Option type="bool" name="parameters_collapsed" value="false"/>
+      </Option>
+      <Option type="QString" name="component_description" value="Analiza pokrycia"/>
+      <Option type="double" name="component_height" value="48.35156250000017"/>
+      <Option type="double" name="component_pos_x" value="879.3624999999997"/>
+      <Option type="double" name="component_pos_y" value="516.2929687500003"/>
+      <Option type="double" name="component_width" value="200"/>
       <Option name="dependencies"/>
-      <Option value="native:calculatevectoroverlaps_1" name="id" type="QString"/>
-      <Option name="outputs" type="Map">
-        <Option name="Procent powierzchni chronionej (w tab. atrybutów)" type="Map">
-          <Option value="native:calculatevectoroverlaps_1" name="child_id" type="QString"/>
-          <Option value="Procent powierzchni chronionej (w tab. atrybutów)" name="component_description" type="QString"/>
-          <Option value="646" name="component_pos_x" type="double"/>
-          <Option value="569" name="component_pos_y" type="double"/>
-          <Option name="default_value" type="invalid"/>
-          <Option value="false" name="mandatory" type="bool"/>
-          <Option value="Procent powierzchni chronionej (w tab. atrybutów)" name="name" type="QString"/>
-          <Option value="OUTPUT" name="output_name" type="QString"/>
+      <Option type="QString" name="id" value="native:calculatevectoroverlaps_1"/>
+      <Option type="Map" name="outputs">
+        <Option type="Map" name="Procent powierzchni chronionej (w tab. atrybutów)">
+          <Option type="QString" name="child_id" value="native:calculatevectoroverlaps_1"/>
+          <Option type="QString" name="color" value=""/>
+          <Option type="Map" name="comment">
+            <Option type="QString" name="color" value=""/>
+            <Option type="QString" name="component_description" value=""/>
+            <Option type="double" name="component_height" value="30"/>
+            <Option type="double" name="component_pos_x" value="0"/>
+            <Option type="double" name="component_pos_y" value="0"/>
+            <Option type="double" name="component_width" value="200"/>
+            <Option type="bool" name="outputs_collapsed" value="false"/>
+            <Option type="bool" name="parameters_collapsed" value="false"/>
+          </Option>
+          <Option type="QString" name="component_description" value="Procent powierzchni chronionej (w tab. atrybutów)"/>
+          <Option type="double" name="component_height" value="66"/>
+          <Option type="double" name="component_pos_x" value="902.2312500000002"/>
+          <Option type="double" name="component_pos_y" value="612.3625"/>
+          <Option type="double" name="component_width" value="200"/>
+          <Option type="Map" name="default_value">
+            <Option type="QString" name="class" value="QgsProcessingOutputLayerDefinition"/>
+            <Option type="Map" name="create_options">
+              <Option type="QString" name="fileEncoding" value="System"/>
+            </Option>
+            <Option type="Map" name="sink">
+              <Option type="bool" name="active" value="true"/>
+              <Option type="int" name="type" value="1"/>
+              <Option type="QString" name="val" value="TEMPORARY_OUTPUT"/>
+            </Option>
+          </Option>
+          <Option type="bool" name="mandatory" value="true"/>
+          <Option type="QString" name="name" value="Procent powierzchni chronionej (w tab. atrybutów)"/>
+          <Option type="QString" name="output_name" value="OUTPUT"/>
+          <Option type="bool" name="outputs_collapsed" value="false"/>
+          <Option type="bool" name="parameters_collapsed" value="false"/>
         </Option>
       </Option>
-      <Option value="true" name="outputs_collapsed" type="bool"/>
-      <Option value="true" name="parameters_collapsed" type="bool"/>
-      <Option name="params" type="Map">
-        <Option name="INPUT" type="List">
+      <Option type="bool" name="outputs_collapsed" value="true"/>
+      <Option type="bool" name="parameters_collapsed" value="true"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="INPUT">
           <Option type="Map">
-            <Option value="obszarwaciwocimiejscowej" name="parameter_name" type="QString"/>
-            <Option value="0" name="source" type="int"/>
+            <Option type="QString" name="parameter_name" value="obszarwaciwocimiejscowej"/>
+            <Option type="int" name="source" value="0"/>
           </Option>
         </Option>
-        <Option name="LAYERS" type="List">
+        <Option type="List" name="LAYERS">
           <Option type="Map">
-            <Option value="native:dissolve_1" name="child_id" type="QString"/>
-            <Option value="OUTPUT" name="output_name" type="QString"/>
-            <Option value="1" name="source" type="int"/>
+            <Option type="QString" name="child_id" value="native:dissolve_1"/>
+            <Option type="QString" name="output_name" value="OUTPUT"/>
+            <Option type="int" name="source" value="1"/>
           </Option>
         </Option>
       </Option>
     </Option>
-    <Option name="native:clip_1" type="Map">
-      <Option value="true" name="active" type="bool"/>
+    <Option type="Map" name="native:clip_1">
+      <Option type="bool" name="active" value="true"/>
       <Option name="alg_config"/>
-      <Option value="native:clip" name="alg_id" type="QString"/>
-      <Option value="Przytnij" name="component_description" type="QString"/>
-      <Option value="446" name="component_pos_x" type="double"/>
-      <Option value="305" name="component_pos_y" type="double"/>
+      <Option type="QString" name="alg_id" value="native:clip"/>
+      <Option type="QString" name="color" value=""/>
+      <Option type="Map" name="comment">
+        <Option type="QString" name="color" value=""/>
+        <Option type="QString" name="component_description" value=""/>
+        <Option type="double" name="component_height" value="30"/>
+        <Option type="double" name="component_pos_x" value="0"/>
+        <Option type="double" name="component_pos_y" value="0"/>
+        <Option type="double" name="component_width" value="200"/>
+        <Option type="bool" name="outputs_collapsed" value="false"/>
+        <Option type="bool" name="parameters_collapsed" value="false"/>
+      </Option>
+      <Option type="QString" name="component_description" value="Przytnij"/>
+      <Option type="double" name="component_height" value="30"/>
+      <Option type="double" name="component_pos_x" value="534.4359375"/>
+      <Option type="double" name="component_pos_y" value="305.76562500000006"/>
+      <Option type="double" name="component_width" value="200"/>
       <Option name="dependencies"/>
-      <Option value="native:clip_1" name="id" type="QString"/>
+      <Option type="QString" name="id" value="native:clip_1"/>
       <Option name="outputs"/>
-      <Option value="true" name="outputs_collapsed" type="bool"/>
-      <Option value="true" name="parameters_collapsed" type="bool"/>
-      <Option name="params" type="Map">
-        <Option name="INPUT" type="List">
+      <Option type="bool" name="outputs_collapsed" value="true"/>
+      <Option type="bool" name="parameters_collapsed" value="true"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="INPUT">
           <Option type="Map">
-            <Option value="qneat3:isoareaaspolygonsfromlayer_1" name="child_id" type="QString"/>
-            <Option value="OUTPUT_POLYGONS" name="output_name" type="QString"/>
-            <Option value="1" name="source" type="int"/>
+            <Option type="QString" name="child_id" value="qneat3:isoareaaspolygonsfromlayer_1"/>
+            <Option type="QString" name="output_name" value="OUTPUT_POLYGONS"/>
+            <Option type="int" name="source" value="1"/>
           </Option>
         </Option>
-        <Option name="OVERLAY" type="List">
+        <Option type="List" name="OVERLAY">
           <Option type="Map">
-            <Option value="obszarwaciwocimiejscowej" name="parameter_name" type="QString"/>
-            <Option value="0" name="source" type="int"/>
+            <Option type="QString" name="parameter_name" value="obszarwaciwocimiejscowej"/>
+            <Option type="int" name="source" value="0"/>
           </Option>
         </Option>
       </Option>
     </Option>
-    <Option name="native:clip_2" type="Map">
-      <Option value="true" name="active" type="bool"/>
+    <Option type="Map" name="native:clip_2">
+      <Option type="bool" name="active" value="true"/>
       <Option name="alg_config"/>
-      <Option value="native:clip" name="alg_id" type="QString"/>
-      <Option value="Ludność w obszarze odpowiedzialności" name="component_description" type="QString"/>
-      <Option value="664" name="component_pos_x" type="double"/>
-      <Option value="702" name="component_pos_y" type="double"/>
+      <Option type="QString" name="alg_id" value="native:clip"/>
+      <Option type="QString" name="color" value=""/>
+      <Option type="Map" name="comment">
+        <Option type="QString" name="color" value=""/>
+        <Option type="QString" name="component_description" value=""/>
+        <Option type="double" name="component_height" value="30"/>
+        <Option type="double" name="component_pos_x" value="1409.1982029598307"/>
+        <Option type="double" name="component_pos_y" value="602.6231501057083"/>
+        <Option type="double" name="component_width" value="200"/>
+        <Option type="bool" name="outputs_collapsed" value="true"/>
+        <Option type="bool" name="parameters_collapsed" value="true"/>
+      </Option>
+      <Option type="QString" name="component_description" value="Ludność w obszarze odpowiedzialności"/>
+      <Option type="double" name="component_height" value="83"/>
+      <Option type="double" name="component_pos_x" value="1163.5810154598305"/>
+      <Option type="double" name="component_pos_y" value="782.0090876057084"/>
+      <Option type="double" name="component_width" value="200"/>
       <Option name="dependencies"/>
-      <Option value="native:clip_2" name="id" type="QString"/>
+      <Option type="QString" name="id" value="native:clip_2"/>
       <Option name="outputs"/>
-      <Option value="true" name="outputs_collapsed" type="bool"/>
-      <Option value="true" name="parameters_collapsed" type="bool"/>
-      <Option name="params" type="Map">
-        <Option name="INPUT" type="List">
+      <Option type="bool" name="outputs_collapsed" value="true"/>
+      <Option type="bool" name="parameters_collapsed" value="true"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="INPUT">
           <Option type="Map">
-            <Option value="obwodyspisoweludnoci" name="parameter_name" type="QString"/>
-            <Option value="0" name="source" type="int"/>
+            <Option type="QString" name="parameter_name" value="obwodyspisoweludnoci"/>
+            <Option type="int" name="source" value="0"/>
           </Option>
         </Option>
-        <Option name="OVERLAY" type="List">
+        <Option type="List" name="OVERLAY">
           <Option type="Map">
-            <Option value="obszarwaciwocimiejscowej" name="parameter_name" type="QString"/>
-            <Option value="0" name="source" type="int"/>
+            <Option type="QString" name="parameter_name" value="obszarwaciwocimiejscowej"/>
+            <Option type="int" name="source" value="0"/>
           </Option>
         </Option>
       </Option>
     </Option>
-    <Option name="native:clip_3" type="Map">
-      <Option value="true" name="active" type="bool"/>
+    <Option type="Map" name="native:clip_3">
+      <Option type="bool" name="active" value="true"/>
       <Option name="alg_config"/>
-      <Option value="native:clip" name="alg_id" type="QString"/>
-      <Option value="Ludność w obszarze chronionym" name="component_description" type="QString"/>
-      <Option value="435" name="component_pos_x" type="double"/>
-      <Option value="701" name="component_pos_y" type="double"/>
+      <Option type="QString" name="alg_id" value="native:clip"/>
+      <Option type="QString" name="color" value=""/>
+      <Option type="Map" name="comment">
+        <Option type="QString" name="color" value=""/>
+        <Option type="QString" name="component_description" value=""/>
+        <Option type="double" name="component_height" value="30"/>
+        <Option type="double" name="component_pos_x" value="635"/>
+        <Option type="double" name="component_pos_y" value="656"/>
+        <Option type="double" name="component_width" value="200"/>
+        <Option type="bool" name="outputs_collapsed" value="true"/>
+        <Option type="bool" name="parameters_collapsed" value="true"/>
+      </Option>
+      <Option type="QString" name="component_description" value="Ludność w obszarze chronionym"/>
+      <Option type="double" name="component_height" value="99.72938689217756"/>
+      <Option type="double" name="component_pos_x" value="261.1243690539112"/>
+      <Option type="double" name="component_pos_y" value="691.1086746828752"/>
+      <Option type="double" name="component_width" value="200"/>
       <Option name="dependencies"/>
-      <Option value="native:clip_3" name="id" type="QString"/>
+      <Option type="QString" name="id" value="native:clip_3"/>
       <Option name="outputs"/>
-      <Option value="true" name="outputs_collapsed" type="bool"/>
-      <Option value="true" name="parameters_collapsed" type="bool"/>
-      <Option name="params" type="Map">
-        <Option name="INPUT" type="List">
+      <Option type="bool" name="outputs_collapsed" value="true"/>
+      <Option type="bool" name="parameters_collapsed" value="true"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="INPUT">
           <Option type="Map">
-            <Option value="obwodyspisoweludnoci" name="parameter_name" type="QString"/>
-            <Option value="0" name="source" type="int"/>
+            <Option type="QString" name="parameter_name" value="obwodyspisoweludnoci"/>
+            <Option type="int" name="source" value="0"/>
           </Option>
         </Option>
-        <Option name="OVERLAY" type="List">
+        <Option type="List" name="OVERLAY">
           <Option type="Map">
-            <Option value="native:dissolve_1" name="child_id" type="QString"/>
-            <Option value="OUTPUT" name="output_name" type="QString"/>
-            <Option value="1" name="source" type="int"/>
-          </Option>
-        </Option>
-      </Option>
-    </Option>
-    <Option name="native:dissolve_1" type="Map">
-      <Option value="true" name="active" type="bool"/>
-      <Option name="alg_config"/>
-      <Option value="native:dissolve" name="alg_id" type="QString"/>
-      <Option value="Obszar chroniony" name="component_description" type="QString"/>
-      <Option value="445" name="component_pos_x" type="double"/>
-      <Option value="414" name="component_pos_y" type="double"/>
-      <Option name="dependencies"/>
-      <Option value="native:dissolve_1" name="id" type="QString"/>
-      <Option name="outputs" type="Map">
-        <Option name="Obszar chroniony w czasie do 15 min." type="Map">
-          <Option value="native:dissolve_1" name="child_id" type="QString"/>
-          <Option value="Obszar chroniony w czasie do 15 min." name="component_description" type="QString"/>
-          <Option value="645" name="component_pos_x" type="double"/>
-          <Option value="459" name="component_pos_y" type="double"/>
-          <Option name="default_value" type="invalid"/>
-          <Option value="false" name="mandatory" type="bool"/>
-          <Option value="Obszar chroniony w czasie do 15 min." name="name" type="QString"/>
-          <Option value="OUTPUT" name="output_name" type="QString"/>
-        </Option>
-      </Option>
-      <Option value="true" name="outputs_collapsed" type="bool"/>
-      <Option value="true" name="parameters_collapsed" type="bool"/>
-      <Option name="params" type="Map">
-        <Option name="FIELD" type="List">
-          <Option type="Map">
-            <Option value="2" name="source" type="int"/>
-            <Option name="static_value" type="invalid"/>
-          </Option>
-        </Option>
-        <Option name="INPUT" type="List">
-          <Option type="Map">
-            <Option value="native:clip_1" name="child_id" type="QString"/>
-            <Option value="OUTPUT" name="output_name" type="QString"/>
-            <Option value="1" name="source" type="int"/>
+            <Option type="QString" name="child_id" value="native:dissolve_1"/>
+            <Option type="QString" name="output_name" value="OUTPUT"/>
+            <Option type="int" name="source" value="1"/>
           </Option>
         </Option>
       </Option>
     </Option>
-    <Option name="native:mergevectorlayers_1" type="Map">
-      <Option value="true" name="active" type="bool"/>
+    <Option type="Map" name="native:dissolve_1">
+      <Option type="bool" name="active" value="true"/>
       <Option name="alg_config"/>
-      <Option value="native:mergevectorlayers" name="alg_id" type="QString"/>
-      <Option value="Złącz warstwy wektorowe" name="component_description" type="QString"/>
-      <Option value="820" name="component_pos_x" type="double"/>
-      <Option value="940" name="component_pos_y" type="double"/>
+      <Option type="QString" name="alg_id" value="native:dissolve"/>
+      <Option type="QString" name="color" value=""/>
+      <Option type="Map" name="comment">
+        <Option type="QString" name="color" value=""/>
+        <Option type="QString" name="component_description" value=""/>
+        <Option type="double" name="component_height" value="30"/>
+        <Option type="double" name="component_pos_x" value="645"/>
+        <Option type="double" name="component_pos_y" value="369"/>
+        <Option type="double" name="component_width" value="200"/>
+        <Option type="bool" name="outputs_collapsed" value="true"/>
+        <Option type="bool" name="parameters_collapsed" value="true"/>
+      </Option>
+      <Option type="QString" name="component_description" value="Obszar chroniony"/>
+      <Option type="double" name="component_height" value="30"/>
+      <Option type="double" name="component_pos_x" value="530.640625"/>
+      <Option type="double" name="component_pos_y" value="402.98906250000005"/>
+      <Option type="double" name="component_width" value="200"/>
       <Option name="dependencies"/>
-      <Option value="native:mergevectorlayers_1" name="id" type="QString"/>
-      <Option name="outputs" type="Map">
-        <Option name="Sumy ludności chronionej/ w obszarze odpowiedzialności (w tab. atrybutów)" type="Map">
-          <Option value="native:mergevectorlayers_1" name="child_id" type="QString"/>
-          <Option value="Sumy ludności chronionej/ w obszarze odpowiedzialności (w tab. atrybutów)" name="component_description" type="QString"/>
-          <Option value="893" name="component_pos_x" type="double"/>
-          <Option value="638" name="component_pos_y" type="double"/>
-          <Option name="default_value" type="invalid"/>
-          <Option value="false" name="mandatory" type="bool"/>
-          <Option value="Sumy ludności chronionej/ w obszarze odpowiedzialności (w tab. atrybutów)" name="name" type="QString"/>
-          <Option value="OUTPUT" name="output_name" type="QString"/>
+      <Option type="QString" name="id" value="native:dissolve_1"/>
+      <Option type="Map" name="outputs">
+        <Option type="Map" name="Obszar chroniony w czasie do 15 min.">
+          <Option type="QString" name="child_id" value="native:dissolve_1"/>
+          <Option type="QString" name="color" value=""/>
+          <Option type="Map" name="comment">
+            <Option type="QString" name="color" value=""/>
+            <Option type="QString" name="component_description" value=""/>
+            <Option type="double" name="component_height" value="30"/>
+            <Option type="double" name="component_pos_x" value="0"/>
+            <Option type="double" name="component_pos_y" value="0"/>
+            <Option type="double" name="component_width" value="200"/>
+            <Option type="bool" name="outputs_collapsed" value="false"/>
+            <Option type="bool" name="parameters_collapsed" value="false"/>
+          </Option>
+          <Option type="QString" name="component_description" value="Obszar chroniony w czasie do 15 min."/>
+          <Option type="double" name="component_height" value="45"/>
+          <Option type="double" name="component_pos_x" value="659.2156250000002"/>
+          <Option type="double" name="component_pos_y" value="516.7015624999999"/>
+          <Option type="double" name="component_width" value="200"/>
+          <Option type="invalid" name="default_value"/>
+          <Option type="bool" name="mandatory" value="false"/>
+          <Option type="QString" name="name" value="Obszar chroniony w czasie do 15 min."/>
+          <Option type="QString" name="output_name" value="OUTPUT"/>
+          <Option type="bool" name="outputs_collapsed" value="false"/>
+          <Option type="bool" name="parameters_collapsed" value="false"/>
         </Option>
       </Option>
-      <Option value="true" name="outputs_collapsed" type="bool"/>
-      <Option value="true" name="parameters_collapsed" type="bool"/>
-      <Option name="params" type="Map">
-        <Option name="CRS" type="List">
+      <Option type="bool" name="outputs_collapsed" value="true"/>
+      <Option type="bool" name="parameters_collapsed" value="true"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="FIELD">
           <Option type="Map">
-            <Option value="2" name="source" type="int"/>
-            <Option name="static_value" type="QgsCoordinateReferenceSystem">
-              <spatialrefsys>
+            <Option type="int" name="source" value="2"/>
+            <Option type="StringList" name="static_value">
+              <Option type="QString" value=""/>
+            </Option>
+          </Option>
+        </Option>
+        <Option type="List" name="INPUT">
+          <Option type="Map">
+            <Option type="QString" name="child_id" value="native:clip_1"/>
+            <Option type="QString" name="output_name" value="OUTPUT"/>
+            <Option type="int" name="source" value="1"/>
+          </Option>
+        </Option>
+        <Option type="List" name="SEPARATE_DISJOINT">
+          <Option type="Map">
+            <Option type="int" name="source" value="2"/>
+            <Option type="bool" name="static_value" value="true"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option type="Map" name="native:mergevectorlayers_1">
+      <Option type="bool" name="active" value="true"/>
+      <Option name="alg_config"/>
+      <Option type="QString" name="alg_id" value="native:mergevectorlayers"/>
+      <Option type="QString" name="color" value=""/>
+      <Option type="Map" name="comment">
+        <Option type="QString" name="color" value=""/>
+        <Option type="QString" name="component_description" value=""/>
+        <Option type="double" name="component_height" value="30"/>
+        <Option type="double" name="component_pos_x" value="1020"/>
+        <Option type="double" name="component_pos_y" value="895"/>
+        <Option type="double" name="component_width" value="200"/>
+        <Option type="bool" name="outputs_collapsed" value="true"/>
+        <Option type="bool" name="parameters_collapsed" value="true"/>
+      </Option>
+      <Option type="QString" name="component_description" value="Złącz warstwy wektorowe"/>
+      <Option type="double" name="component_height" value="30"/>
+      <Option type="double" name="component_pos_x" value="770.2996828752642"/>
+      <Option type="double" name="component_pos_y" value="1015.4249471458774"/>
+      <Option type="double" name="component_width" value="200"/>
+      <Option name="dependencies"/>
+      <Option type="QString" name="id" value="native:mergevectorlayers_1"/>
+      <Option type="Map" name="outputs">
+        <Option type="Map" name="Sumy ludności chronionej/ w obszarze odpowiedzialności (w tab. atrybutów)">
+          <Option type="QString" name="child_id" value="native:mergevectorlayers_1"/>
+          <Option type="QString" name="color" value=""/>
+          <Option type="Map" name="comment">
+            <Option type="QString" name="color" value=""/>
+            <Option type="QString" name="component_description" value=""/>
+            <Option type="double" name="component_height" value="30"/>
+            <Option type="double" name="component_pos_x" value="0"/>
+            <Option type="double" name="component_pos_y" value="0"/>
+            <Option type="double" name="component_width" value="200"/>
+            <Option type="bool" name="outputs_collapsed" value="false"/>
+            <Option type="bool" name="parameters_collapsed" value="false"/>
+          </Option>
+          <Option type="QString" name="component_description" value="Sumy ludności chronionej/ w obszarze odpowiedzialności (w tab. atrybutów)"/>
+          <Option type="double" name="component_height" value="111"/>
+          <Option type="double" name="component_pos_x" value="988"/>
+          <Option type="double" name="component_pos_y" value="1093.5"/>
+          <Option type="double" name="component_width" value="200"/>
+          <Option type="Map" name="default_value">
+            <Option type="QString" name="class" value="QgsProcessingOutputLayerDefinition"/>
+            <Option type="Map" name="create_options">
+              <Option type="QString" name="fileEncoding" value="System"/>
+            </Option>
+            <Option type="Map" name="sink">
+              <Option type="bool" name="active" value="true"/>
+              <Option type="int" name="type" value="1"/>
+              <Option type="QString" name="val" value="TEMPORARY_OUTPUT"/>
+            </Option>
+          </Option>
+          <Option type="bool" name="mandatory" value="true"/>
+          <Option type="QString" name="name" value="Sumy ludności chronionej/ w obszarze odpowiedzialności (w tab. atrybutów)"/>
+          <Option type="QString" name="output_name" value="OUTPUT"/>
+          <Option type="bool" name="outputs_collapsed" value="false"/>
+          <Option type="bool" name="parameters_collapsed" value="false"/>
+        </Option>
+      </Option>
+      <Option type="bool" name="outputs_collapsed" value="true"/>
+      <Option type="bool" name="parameters_collapsed" value="true"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="CRS">
+          <Option type="Map">
+            <Option type="int" name="source" value="2"/>
+            <Option type="QgsCoordinateReferenceSystem" name="static_value">
+              <spatialrefsys nativeFormat="Wkt">
+                <wkt>PROJCRS["ETRF2000-PL / CS92",BASEGEOGCRS["ETRF2000-PL",DATUM["ETRF2000 Poland",ELLIPSOID["GRS 1980",6378137,298.257222101,LENGTHUNIT["metre",1]]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433]],ID["EPSG",9702]],CONVERSION["Poland CS92",METHOD["Transverse Mercator",ID["EPSG",9807]],PARAMETER["Latitude of natural origin",0,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8801]],PARAMETER["Longitude of natural origin",19,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8802]],PARAMETER["Scale factor at natural origin",0.9993,SCALEUNIT["unity",1],ID["EPSG",8805]],PARAMETER["False easting",500000,LENGTHUNIT["metre",1],ID["EPSG",8806]],PARAMETER["False northing",-5300000,LENGTHUNIT["metre",1],ID["EPSG",8807]]],CS[Cartesian,2],AXIS["northing (x)",north,ORDER[1],LENGTHUNIT["metre",1]],AXIS["easting (y)",east,ORDER[2],LENGTHUNIT["metre",1]],USAGE[SCOPE["Topographic mapping (medium and small scale)."],AREA["Poland - onshore and offshore."],BBOX[49,14.14,55.93,24.15]],ID["EPSG",2180]]</wkt>
                 <proj4>+proj=tmerc +lat_0=0 +lon_0=19 +k=0.9993 +x_0=500000 +y_0=-5300000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs</proj4>
                 <srsid>171</srsid>
                 <srid>2180</srid>
                 <authid>EPSG:2180</authid>
-                <description>ETRS89 / Poland CS92</description>
+                <description>ETRF2000-PL / CS92</description>
                 <projectionacronym>tmerc</projectionacronym>
-                <ellipsoidacronym>GRS80</ellipsoidacronym>
+                <ellipsoidacronym>EPSG:7019</ellipsoidacronym>
                 <geographicflag>false</geographicflag>
               </spatialrefsys>
             </Option>
           </Option>
         </Option>
-        <Option name="LAYERS" type="List">
+        <Option type="List" name="LAYERS">
           <Option type="Map">
-            <Option value="qgis:aggregate_2" name="child_id" type="QString"/>
-            <Option value="OUTPUT" name="output_name" type="QString"/>
-            <Option value="1" name="source" type="int"/>
+            <Option type="QString" name="child_id" value="qgis:aggregate_2"/>
+            <Option type="QString" name="output_name" value="OUTPUT"/>
+            <Option type="int" name="source" value="1"/>
           </Option>
           <Option type="Map">
-            <Option value="qgis:aggregate_1" name="child_id" type="QString"/>
-            <Option value="OUTPUT" name="output_name" type="QString"/>
-            <Option value="1" name="source" type="int"/>
+            <Option type="QString" name="child_id" value="qgis:aggregate_1"/>
+            <Option type="QString" name="output_name" value="OUTPUT"/>
+            <Option type="int" name="source" value="1"/>
           </Option>
         </Option>
       </Option>
     </Option>
-    <Option name="qgis:aggregate_1" type="Map">
-      <Option value="true" name="active" type="bool"/>
+    <Option type="Map" name="qgis:aggregate_1">
+      <Option type="bool" name="active" value="true"/>
       <Option name="alg_config"/>
-      <Option value="qgis:aggregate" name="alg_id" type="QString"/>
-      <Option value="Suma ludności w obszarze odpowiedzialności" name="component_description" type="QString"/>
-      <Option value="831" name="component_pos_x" type="double"/>
-      <Option value="829" name="component_pos_y" type="double"/>
+      <Option type="QString" name="alg_id" value="native:aggregate"/>
+      <Option type="QString" name="color" value=""/>
+      <Option type="Map" name="comment">
+        <Option type="QString" name="color" value=""/>
+        <Option type="QString" name="component_description" value=""/>
+        <Option type="double" name="component_height" value="30"/>
+        <Option type="double" name="component_pos_x" value="1031"/>
+        <Option type="double" name="component_pos_y" value="784"/>
+        <Option type="double" name="component_width" value="200"/>
+        <Option type="bool" name="outputs_collapsed" value="true"/>
+        <Option type="bool" name="parameters_collapsed" value="true"/>
+      </Option>
+      <Option type="QString" name="component_description" value="Suma ludności w obszarze odpowiedzialności"/>
+      <Option type="double" name="component_height" value="53.58932346723043"/>
+      <Option type="double" name="component_pos_x" value="1001.8498975951372"/>
+      <Option type="double" name="component_pos_y" value="930.6706626585624"/>
+      <Option type="double" name="component_width" value="200"/>
       <Option name="dependencies"/>
-      <Option value="qgis:aggregate_1" name="id" type="QString"/>
+      <Option type="QString" name="id" value="qgis:aggregate_1"/>
       <Option name="outputs"/>
-      <Option value="true" name="outputs_collapsed" type="bool"/>
-      <Option value="true" name="parameters_collapsed" type="bool"/>
-      <Option name="params" type="Map">
-        <Option name="AGGREGATES" type="List">
+      <Option type="bool" name="outputs_collapsed" value="true"/>
+      <Option type="bool" name="parameters_collapsed" value="true"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="AGGREGATES">
           <Option type="Map">
-            <Option value="2" name="source" type="int"/>
-            <Option name="static_value" type="List">
+            <Option type="int" name="source" value="2"/>
+            <Option type="List" name="static_value">
               <Option type="Map">
-                <Option value="sum" name="aggregate" type="QString"/>
-                <Option value="," name="delimiter" type="QString"/>
-                <Option value="&quot;TOTAL_POP&quot;" name="input" type="QString"/>
-                <Option value="0" name="length" type="int"/>
-                <Option value="TOTAL_POP" name="name" type="QString"/>
-                <Option value="0" name="precision" type="int"/>
-                <Option value="2" name="type" type="int"/>
+                <Option type="QString" name="aggregate" value="sum"/>
+                <Option type="QString" name="delimiter" value=","/>
+                <Option type="QString" name="input" value="&quot;TOTAL_POP&quot;"/>
+                <Option type="int" name="length" value="0"/>
+                <Option type="QString" name="name" value="TOTAL_POP"/>
+                <Option type="int" name="precision" value="0"/>
+                <Option type="int" name="sub_type" value="0"/>
+                <Option type="int" name="type" value="2"/>
+                <Option type="QString" name="type_name" value="integer"/>
               </Option>
             </Option>
           </Option>
         </Option>
-        <Option name="GROUP_BY" type="List">
+        <Option type="List" name="GROUP_BY">
           <Option type="Map">
-            <Option value="2" name="source" type="int"/>
-            <Option value="NULL" name="static_value" type="QString"/>
+            <Option type="int" name="source" value="2"/>
+            <Option type="QString" name="static_value" value="NULL"/>
           </Option>
         </Option>
-        <Option name="INPUT" type="List">
+        <Option type="List" name="INPUT">
           <Option type="Map">
-            <Option value="native:clip_2" name="child_id" type="QString"/>
-            <Option value="OUTPUT" name="output_name" type="QString"/>
-            <Option value="1" name="source" type="int"/>
+            <Option type="QString" name="child_id" value="native:clip_2"/>
+            <Option type="QString" name="output_name" value="OUTPUT"/>
+            <Option type="int" name="source" value="1"/>
           </Option>
         </Option>
       </Option>
     </Option>
-    <Option name="qgis:aggregate_2" type="Map">
-      <Option value="true" name="active" type="bool"/>
+    <Option type="Map" name="qgis:aggregate_2">
+      <Option type="bool" name="active" value="true"/>
       <Option name="alg_config"/>
-      <Option value="qgis:aggregate" name="alg_id" type="QString"/>
-      <Option value="Suma ludności w obszarze chronionym" name="component_description" type="QString"/>
-      <Option value="587" name="component_pos_x" type="double"/>
-      <Option value="828" name="component_pos_y" type="double"/>
+      <Option type="QString" name="alg_id" value="native:aggregate"/>
+      <Option type="QString" name="color" value=""/>
+      <Option type="Map" name="comment">
+        <Option type="QString" name="color" value=""/>
+        <Option type="QString" name="component_description" value=""/>
+        <Option type="double" name="component_height" value="30"/>
+        <Option type="double" name="component_pos_x" value="787"/>
+        <Option type="double" name="component_pos_y" value="783"/>
+        <Option type="double" name="component_width" value="200"/>
+        <Option type="bool" name="outputs_collapsed" value="true"/>
+        <Option type="bool" name="parameters_collapsed" value="true"/>
+      </Option>
+      <Option type="QString" name="component_description" value="Suma ludności w obszarze chronionym"/>
+      <Option type="double" name="component_height" value="78.07617930761114"/>
+      <Option type="double" name="component_pos_x" value="402.2640625"/>
+      <Option type="double" name="component_pos_y" value="847.1005896538055"/>
+      <Option type="double" name="component_width" value="200"/>
       <Option name="dependencies"/>
-      <Option value="qgis:aggregate_2" name="id" type="QString"/>
+      <Option type="QString" name="id" value="qgis:aggregate_2"/>
       <Option name="outputs"/>
-      <Option value="true" name="outputs_collapsed" type="bool"/>
-      <Option value="true" name="parameters_collapsed" type="bool"/>
-      <Option name="params" type="Map">
-        <Option name="AGGREGATES" type="List">
+      <Option type="bool" name="outputs_collapsed" value="true"/>
+      <Option type="bool" name="parameters_collapsed" value="true"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="AGGREGATES">
           <Option type="Map">
-            <Option value="2" name="source" type="int"/>
-            <Option name="static_value" type="List">
+            <Option type="int" name="source" value="2"/>
+            <Option type="List" name="static_value">
               <Option type="Map">
-                <Option value="mean" name="aggregate" type="QString"/>
-                <Option value="," name="delimiter" type="QString"/>
-                <Option value=" $area / &quot;Shape_Area&quot;" name="input" type="QString"/>
-                <Option value="0" name="length" type="int"/>
-                <Option value="Shape_percent" name="name" type="QString"/>
-                <Option value="0" name="precision" type="int"/>
-                <Option value="6" name="type" type="int"/>
+                <Option type="QString" name="aggregate" value="mean"/>
+                <Option type="QString" name="delimiter" value=","/>
+                <Option type="QString" name="input" value=" $area / &quot;Shape_Area&quot;"/>
+                <Option type="int" name="length" value="0"/>
+                <Option type="QString" name="name" value="Shape_percent"/>
+                <Option type="int" name="precision" value="0"/>
+                <Option type="int" name="sub_type" value="0"/>
+                <Option type="int" name="type" value="6"/>
+                <Option type="QString" name="type_name" value="double precision"/>
               </Option>
               <Option type="Map">
-                <Option value="sum" name="aggregate" type="QString"/>
-                <Option value="," name="delimiter" type="QString"/>
-                <Option value="&quot;TOTAL_POP&quot;" name="input" type="QString"/>
-                <Option value="0" name="length" type="int"/>
-                <Option value="TOTAL_POP" name="name" type="QString"/>
-                <Option value="0" name="precision" type="int"/>
-                <Option value="2" name="type" type="int"/>
+                <Option type="QString" name="aggregate" value="sum"/>
+                <Option type="QString" name="delimiter" value=","/>
+                <Option type="QString" name="input" value="&quot;TOTAL_POP&quot;"/>
+                <Option type="int" name="length" value="0"/>
+                <Option type="QString" name="name" value="TOTAL_POP"/>
+                <Option type="int" name="precision" value="0"/>
+                <Option type="int" name="sub_type" value="0"/>
+                <Option type="int" name="type" value="2"/>
+                <Option type="QString" name="type_name" value="integer"/>
               </Option>
               <Option type="Map">
-                <Option value="sum" name="aggregate" type="QString"/>
-                <Option value="," name="delimiter" type="QString"/>
-                <Option value="&quot;TOTAL_POP&quot;  *($area/&quot;Shape_Area&quot;)" name="input" type="QString"/>
-                <Option value="0" name="length" type="int"/>
-                <Option value="populacja_skoryg" name="name" type="QString"/>
-                <Option value="0" name="precision" type="int"/>
-                <Option value="6" name="type" type="int"/>
+                <Option type="QString" name="aggregate" value="sum"/>
+                <Option type="QString" name="delimiter" value=","/>
+                <Option type="QString" name="input" value="&quot;TOTAL_POP&quot; *($area/&quot;Shape_Area&quot;)"/>
+                <Option type="int" name="length" value="0"/>
+                <Option type="QString" name="name" value="populacja_skoryg"/>
+                <Option type="int" name="precision" value="0"/>
+                <Option type="int" name="sub_type" value="0"/>
+                <Option type="int" name="type" value="6"/>
+                <Option type="QString" name="type_name" value="double precision"/>
               </Option>
             </Option>
           </Option>
         </Option>
-        <Option name="GROUP_BY" type="List">
+        <Option type="List" name="GROUP_BY">
           <Option type="Map">
-            <Option value="2" name="source" type="int"/>
-            <Option value="NULL" name="static_value" type="QString"/>
+            <Option type="int" name="source" value="2"/>
+            <Option type="QString" name="static_value" value="NULL"/>
           </Option>
         </Option>
-        <Option name="INPUT" type="List">
+        <Option type="List" name="INPUT">
           <Option type="Map">
-            <Option value="native:clip_3" name="child_id" type="QString"/>
-            <Option value="OUTPUT" name="output_name" type="QString"/>
-            <Option value="1" name="source" type="int"/>
+            <Option type="QString" name="child_id" value="native:clip_3"/>
+            <Option type="QString" name="output_name" value="OUTPUT"/>
+            <Option type="int" name="source" value="1"/>
           </Option>
         </Option>
       </Option>
     </Option>
-    <Option name="qneat3:isoareaaspolygonsfromlayer_1" type="Map">
-      <Option value="true" name="active" type="bool"/>
+    <Option type="Map" name="qneat3:isoareaaspolygonsfromlayer_1">
+      <Option type="bool" name="active" value="true"/>
       <Option name="alg_config"/>
-      <Option value="qneat3:isoareaaspolygonsfromlayer" name="alg_id" type="QString"/>
-      <Option value="Zasięg prognozowanego czasu dojazdu 15 min" name="component_description" type="QString"/>
-      <Option value="450" name="component_pos_x" type="double"/>
-      <Option value="204" name="component_pos_y" type="double"/>
+      <Option type="QString" name="alg_id" value="qneat3:isoareaaspolygonsfromlayer"/>
+      <Option type="QString" name="color" value=""/>
+      <Option type="Map" name="comment">
+        <Option type="QString" name="color" value=""/>
+        <Option type="QString" name="component_description" value=""/>
+        <Option type="double" name="component_height" value="30"/>
+        <Option type="double" name="component_pos_x" value="0"/>
+        <Option type="double" name="component_pos_y" value="0"/>
+        <Option type="double" name="component_width" value="200"/>
+        <Option type="bool" name="outputs_collapsed" value="false"/>
+        <Option type="bool" name="parameters_collapsed" value="false"/>
+      </Option>
+      <Option type="QString" name="component_description" value="Zasięg prognozowanego czasu dojazdu 15 min"/>
+      <Option type="double" name="component_height" value="43"/>
+      <Option type="double" name="component_pos_x" value="345.571875"/>
+      <Option type="double" name="component_pos_y" value="210.5"/>
+      <Option type="double" name="component_width" value="200"/>
       <Option name="dependencies"/>
-      <Option value="qneat3:isoareaaspolygonsfromlayer_1" name="id" type="QString"/>
+      <Option type="QString" name="id" value="qneat3:isoareaaspolygonsfromlayer_1"/>
       <Option name="outputs"/>
-      <Option value="true" name="outputs_collapsed" type="bool"/>
-      <Option value="true" name="parameters_collapsed" type="bool"/>
-      <Option name="params" type="Map">
-        <Option name="CELL_SIZE" type="List">
+      <Option type="bool" name="outputs_collapsed" value="true"/>
+      <Option type="bool" name="parameters_collapsed" value="true"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="CELL_SIZE">
           <Option type="Map">
-            <Option value="2" name="source" type="int"/>
-            <Option value="75" name="static_value" type="int"/>
+            <Option type="int" name="source" value="2"/>
+            <Option type="int" name="static_value" value="75"/>
           </Option>
         </Option>
-        <Option name="DEFAULT_DIRECTION" type="List">
+        <Option type="List" name="DEFAULT_DIRECTION">
           <Option type="Map">
-            <Option value="2" name="source" type="int"/>
-            <Option value="2" name="static_value" type="int"/>
+            <Option type="int" name="source" value="2"/>
+            <Option type="int" name="static_value" value="2"/>
           </Option>
         </Option>
-        <Option name="DEFAULT_SPEED" type="List">
+        <Option type="List" name="DEFAULT_SPEED">
           <Option type="Map">
-            <Option value="2" name="source" type="int"/>
-            <Option value="5" name="static_value" type="double"/>
+            <Option type="int" name="source" value="2"/>
+            <Option type="double" name="static_value" value="5"/>
           </Option>
         </Option>
-        <Option name="DIRECTION_FIELD" type="List">
+        <Option type="List" name="DIRECTION_FIELD">
           <Option type="Map">
-            <Option value="2" name="source" type="int"/>
-            <Option name="static_value" type="invalid"/>
+            <Option type="int" name="source" value="2"/>
+            <Option type="invalid" name="static_value"/>
           </Option>
         </Option>
-        <Option name="ENTRY_COST_CALCULATION_METHOD" type="List">
+        <Option type="List" name="ENTRY_COST_CALCULATION_METHOD">
           <Option type="Map">
-            <Option value="2" name="source" type="int"/>
-            <Option value="0" name="static_value" type="int"/>
+            <Option type="int" name="source" value="2"/>
+            <Option type="int" name="static_value" value="0"/>
           </Option>
         </Option>
-        <Option name="ID_FIELD" type="List">
+        <Option type="List" name="ID_FIELD">
           <Option type="Map">
-            <Option value="nazwaunikalnegoidentyfikatorajednostki" name="parameter_name" type="QString"/>
-            <Option value="0" name="source" type="int"/>
+            <Option type="QString" name="parameter_name" value="nazwaunikalnegoidentyfikatorajednostki"/>
+            <Option type="int" name="source" value="0"/>
           </Option>
         </Option>
-        <Option name="INPUT" type="List">
+        <Option type="List" name="INPUT">
           <Option type="Map">
-            <Option value="zbirdanychsieciowych" name="parameter_name" type="QString"/>
-            <Option value="0" name="source" type="int"/>
+            <Option type="QString" name="parameter_name" value="zbirdanychsieciowych"/>
+            <Option type="int" name="source" value="0"/>
           </Option>
         </Option>
-        <Option name="INTERVAL" type="List">
+        <Option type="List" name="INTERVAL">
           <Option type="Map">
-            <Option value="2" name="source" type="int"/>
-            <Option value="900" name="static_value" type="double"/>
+            <Option type="int" name="source" value="2"/>
+            <Option type="double" name="static_value" value="900"/>
           </Option>
         </Option>
-        <Option name="MAX_DIST" type="List">
+        <Option type="List" name="MAX_DIST">
           <Option type="Map">
-            <Option value="czasws" name="parameter_name" type="QString"/>
-            <Option value="0" name="source" type="int"/>
+            <Option type="QString" name="parameter_name" value="czasws"/>
+            <Option type="int" name="source" value="0"/>
           </Option>
         </Option>
-        <Option name="SPEED_FIELD" type="List">
+        <Option type="List" name="SPEED_FIELD">
           <Option type="Map">
-            <Option value="2" name="source" type="int"/>
-            <Option value="vmax" name="static_value" type="QString"/>
+            <Option type="int" name="source" value="2"/>
+            <Option type="QString" name="static_value" value="vmax"/>
           </Option>
         </Option>
-        <Option name="START_POINTS" type="List">
+        <Option type="List" name="START_POINTS">
           <Option type="Map">
-            <Option value="zbirjednostekksrg" name="parameter_name" type="QString"/>
-            <Option value="0" name="source" type="int"/>
+            <Option type="QString" name="parameter_name" value="zbirjednostekksrg"/>
+            <Option type="int" name="source" value="0"/>
           </Option>
         </Option>
-        <Option name="STRATEGY" type="List">
+        <Option type="List" name="STRATEGY">
           <Option type="Map">
-            <Option value="2" name="source" type="int"/>
-            <Option value="1" name="static_value" type="int"/>
+            <Option type="int" name="source" value="2"/>
+            <Option type="int" name="static_value" value="1"/>
           </Option>
         </Option>
-        <Option name="TOLERANCE" type="List">
+        <Option type="List" name="TOLERANCE">
           <Option type="Map">
-            <Option value="2" name="source" type="int"/>
-            <Option value="3" name="static_value" type="double"/>
+            <Option type="int" name="source" value="2"/>
+            <Option type="double" name="static_value" value="3"/>
           </Option>
         </Option>
-        <Option name="VALUE_BACKWARD" type="List">
+        <Option type="List" name="VALUE_BACKWARD">
           <Option type="Map">
-            <Option value="2" name="source" type="int"/>
-            <Option value="" name="static_value" type="QString"/>
+            <Option type="int" name="source" value="2"/>
+            <Option type="QString" name="static_value" value=""/>
           </Option>
         </Option>
-        <Option name="VALUE_BOTH" type="List">
+        <Option type="List" name="VALUE_BOTH">
           <Option type="Map">
-            <Option value="2" name="source" type="int"/>
-            <Option value="" name="static_value" type="QString"/>
+            <Option type="int" name="source" value="2"/>
+            <Option type="QString" name="static_value" value=""/>
           </Option>
         </Option>
-        <Option name="VALUE_FORWARD" type="List">
+        <Option type="List" name="VALUE_FORWARD">
           <Option type="Map">
-            <Option value="2" name="source" type="int"/>
-            <Option value="" name="static_value" type="QString"/>
+            <Option type="int" name="source" value="2"/>
+            <Option type="QString" name="static_value" value=""/>
           </Option>
         </Option>
       </Option>
     </Option>
   </Option>
+  <Option name="designerParameterValues"/>
+  <Option name="groupBoxes"/>
   <Option name="help"/>
+  <Option type="QString" name="internal_version" value="Version1"/>
   <Option name="modelVariables"/>
-  <Option value="Analizy sieciowe" name="model_group" type="QString"/>
-  <Option value="Procent powierzchni" name="model_name" type="QString"/>
-  <Option name="parameterDefinitions" type="Map">
-    <Option name="czasws" type="Map">
-      <Option value="0" name="data_type" type="int"/>
-      <Option value="900" name="default" type="QString"/>
-      <Option value="Graniczny czas w s" name="description" type="QString"/>
-      <Option value="0" name="flags" type="int"/>
-      <Option value="1200" name="max" type="double"/>
+  <Option type="QString" name="model_group" value="Analizy sieciowe"/>
+  <Option type="QString" name="model_name" value="Procent powierzchni"/>
+  <Option type="Map" name="parameterDefinitions">
+    <Option type="Map" name="czasws">
+      <Option type="int" name="data_type" value="0"/>
+      <Option type="QString" name="default" value="900"/>
+      <Option type="invalid" name="defaultGui"/>
+      <Option type="QString" name="description" value="Graniczny czas w s"/>
+      <Option type="int" name="flags" value="0"/>
+      <Option type="QString" name="help" value=""/>
+      <Option type="double" name="max" value="1200"/>
       <Option name="metadata"/>
-      <Option value="60" name="min" type="double"/>
-      <Option value="czasws" name="name" type="QString"/>
-      <Option value="number" name="parameter_type" type="QString"/>
+      <Option type="double" name="min" value="60"/>
+      <Option type="QString" name="name" value="czasws"/>
+      <Option type="QString" name="parameter_type" value="number"/>
     </Option>
-    <Option name="native:calculatevectoroverlaps_1:Procent powierzchni chronionej (w tab. atrybutów)" type="Map">
-      <Option value="true" name="create_by_default" type="bool"/>
-      <Option value="-1" name="data_type" type="int"/>
-      <Option name="default" type="invalid"/>
-      <Option value="Procent powierzchni chronionej (w tab. atrybutów)" name="description" type="QString"/>
-      <Option value="0" name="flags" type="int"/>
-      <Option name="metadata"/>
-      <Option value="native:calculatevectoroverlaps_1:Procent powierzchni chronionej (w tab. atrybutów)" name="name" type="QString"/>
-      <Option value="sink" name="parameter_type" type="QString"/>
-      <Option value="true" name="supports_non_file_outputs" type="bool"/>
-    </Option>
-    <Option name="native:dissolve_1:Obszar chroniony w czasie do 15 min." type="Map">
-      <Option value="true" name="create_by_default" type="bool"/>
-      <Option value="-1" name="data_type" type="int"/>
-      <Option name="default" type="invalid"/>
-      <Option value="Obszar chroniony w czasie do 15 min." name="description" type="QString"/>
-      <Option value="0" name="flags" type="int"/>
-      <Option name="metadata"/>
-      <Option value="native:dissolve_1:Obszar chroniony w czasie do 15 min." name="name" type="QString"/>
-      <Option value="sink" name="parameter_type" type="QString"/>
-      <Option value="true" name="supports_non_file_outputs" type="bool"/>
-    </Option>
-    <Option name="native:mergevectorlayers_1:Sumy ludności chronionej/ w obszarze odpowiedzialności (w tab. atrybutów)" type="Map">
-      <Option value="true" name="create_by_default" type="bool"/>
-      <Option value="-1" name="data_type" type="int"/>
-      <Option name="default" type="invalid"/>
-      <Option value="Sumy ludności chronionej/ w obszarze odpowiedzialności (w tab. atrybutów)" name="description" type="QString"/>
-      <Option value="0" name="flags" type="int"/>
-      <Option name="metadata"/>
-      <Option value="native:mergevectorlayers_1:Sumy ludności chronionej/ w obszarze odpowiedzialności (w tab. atrybutów)" name="name" type="QString"/>
-      <Option value="sink" name="parameter_type" type="QString"/>
-      <Option value="true" name="supports_non_file_outputs" type="bool"/>
-    </Option>
-    <Option name="nazwaunikalnegoidentyfikatorajednostki" type="Map">
-      <Option value="OSP" name="default" type="QString"/>
-      <Option value="Nazwa unikalnego identyfikatora jednostki" name="description" type="QString"/>
-      <Option value="0" name="flags" type="int"/>
-      <Option name="metadata"/>
-      <Option value="false" name="multiline" type="bool"/>
-      <Option value="nazwaunikalnegoidentyfikatorajednostki" name="name" type="QString"/>
-      <Option value="string" name="parameter_type" type="QString"/>
-    </Option>
-    <Option name="obszarwaciwocimiejscowej" type="Map">
-      <Option name="data_types" type="List">
-        <Option value="2" type="int"/>
+    <Option type="Map" name="native:calculatevectoroverlaps_1:Procent powierzchni chronionej (w tab. atrybutów)">
+      <Option type="bool" name="create_by_default" value="true"/>
+      <Option type="int" name="data_type" value="-1"/>
+      <Option type="QgsProcessingOutputLayerDefinition" name="default">
+        <Option type="Map">
+          <Option type="Map" name="create_options">
+            <Option type="QString" name="fileEncoding" value="System"/>
+          </Option>
+          <Option type="Map" name="sink">
+            <Option type="bool" name="active" value="true"/>
+            <Option type="int" name="type" value="1"/>
+            <Option type="QString" name="val" value="TEMPORARY_OUTPUT"/>
+          </Option>
+        </Option>
       </Option>
-      <Option name="default" type="invalid"/>
-      <Option value="Obszar właściwości miejscowej" name="description" type="QString"/>
-      <Option value="0" name="flags" type="int"/>
-      <Option name="metadata"/>
-      <Option value="obszarwaciwocimiejscowej" name="name" type="QString"/>
-      <Option value="vector" name="parameter_type" type="QString"/>
-    </Option>
-    <Option name="obwodyspisoweludnoci" type="Map">
-      <Option name="data_types" type="List">
-        <Option value="2" type="int"/>
+      <Option type="invalid" name="defaultGui"/>
+      <Option type="QString" name="description" value="Procent powierzchni chronionej (w tab. atrybutów)"/>
+      <Option type="int" name="flags" value="0"/>
+      <Option type="QString" name="help" value=""/>
+      <Option type="Map" name="metadata">
+        <Option type="QString" name="_modelChildId" value="native:calculatevectoroverlaps_1"/>
+        <Option type="QString" name="_modelChildOutputName" value="Procent powierzchni chronionej (w tab. atrybutów)"/>
+        <Option type="QString" name="_modelChildProvider" value="native"/>
       </Option>
-      <Option name="default" type="invalid"/>
-      <Option value="Obwody spisowe ludności" name="description" type="QString"/>
-      <Option value="0" name="flags" type="int"/>
-      <Option name="metadata"/>
-      <Option value="obwodyspisoweludnoci" name="name" type="QString"/>
-      <Option value="vector" name="parameter_type" type="QString"/>
+      <Option type="QString" name="name" value="native:calculatevectoroverlaps_1:Procent powierzchni chronionej (w tab. atrybutów)"/>
+      <Option type="QString" name="parameter_type" value="sink"/>
+      <Option type="bool" name="supports_append" value="false"/>
+      <Option type="bool" name="supports_non_file_outputs" value="true"/>
     </Option>
-    <Option name="zbirdanychsieciowych" type="Map">
-      <Option name="data_types" type="List">
-        <Option value="1" type="int"/>
+    <Option type="Map" name="native:dissolve_1:Obszar chroniony w czasie do 15 min.">
+      <Option type="bool" name="create_by_default" value="true"/>
+      <Option type="int" name="data_type" value="-1"/>
+      <Option type="invalid" name="default"/>
+      <Option type="invalid" name="defaultGui"/>
+      <Option type="QString" name="description" value="Obszar chroniony w czasie do 15 min."/>
+      <Option type="int" name="flags" value="0"/>
+      <Option type="QString" name="help" value=""/>
+      <Option type="Map" name="metadata">
+        <Option type="QString" name="_modelChildId" value="native:dissolve_1"/>
+        <Option type="QString" name="_modelChildOutputName" value="Obszar chroniony w czasie do 15 min."/>
+        <Option type="QString" name="_modelChildProvider" value="native"/>
       </Option>
-      <Option name="default" type="invalid"/>
-      <Option value="Zbiór danych sieciowych" name="description" type="QString"/>
-      <Option value="0" name="flags" type="int"/>
-      <Option name="metadata"/>
-      <Option value="zbirdanychsieciowych" name="name" type="QString"/>
-      <Option value="vector" name="parameter_type" type="QString"/>
+      <Option type="QString" name="name" value="native:dissolve_1:Obszar chroniony w czasie do 15 min."/>
+      <Option type="QString" name="parameter_type" value="sink"/>
+      <Option type="bool" name="supports_append" value="false"/>
+      <Option type="bool" name="supports_non_file_outputs" value="true"/>
     </Option>
-    <Option name="zbirjednostekksrg" type="Map">
-      <Option name="data_types" type="List">
-        <Option value="0" type="int"/>
+    <Option type="Map" name="native:mergevectorlayers_1:Sumy ludności chronionej/ w obszarze odpowiedzialności (w tab. atrybutów)">
+      <Option type="bool" name="create_by_default" value="true"/>
+      <Option type="int" name="data_type" value="-1"/>
+      <Option type="QgsProcessingOutputLayerDefinition" name="default">
+        <Option type="Map">
+          <Option type="Map" name="create_options">
+            <Option type="QString" name="fileEncoding" value="System"/>
+          </Option>
+          <Option type="Map" name="sink">
+            <Option type="bool" name="active" value="true"/>
+            <Option type="int" name="type" value="1"/>
+            <Option type="QString" name="val" value="TEMPORARY_OUTPUT"/>
+          </Option>
+        </Option>
       </Option>
-      <Option name="default" type="invalid"/>
-      <Option value="Jednostki KSRG" name="description" type="QString"/>
-      <Option value="0" name="flags" type="int"/>
+      <Option type="invalid" name="defaultGui"/>
+      <Option type="QString" name="description" value="Sumy ludności chronionej/ w obszarze odpowiedzialności (w tab. atrybutów)"/>
+      <Option type="int" name="flags" value="0"/>
+      <Option type="QString" name="help" value=""/>
+      <Option type="Map" name="metadata">
+        <Option type="QString" name="_modelChildId" value="native:mergevectorlayers_1"/>
+        <Option type="QString" name="_modelChildOutputName" value="Sumy ludności chronionej/ w obszarze odpowiedzialności (w tab. atrybutów)"/>
+        <Option type="QString" name="_modelChildProvider" value="native"/>
+      </Option>
+      <Option type="QString" name="name" value="native:mergevectorlayers_1:Sumy ludności chronionej/ w obszarze odpowiedzialności (w tab. atrybutów)"/>
+      <Option type="QString" name="parameter_type" value="sink"/>
+      <Option type="bool" name="supports_append" value="false"/>
+      <Option type="bool" name="supports_non_file_outputs" value="true"/>
+    </Option>
+    <Option type="Map" name="nazwaunikalnegoidentyfikatorajednostki">
+      <Option type="QString" name="default" value="OSP"/>
+      <Option type="invalid" name="defaultGui"/>
+      <Option type="QString" name="description" value="Nazwa unikalnego identyfikatora jednostki"/>
+      <Option type="int" name="flags" value="0"/>
+      <Option type="QString" name="help" value=""/>
       <Option name="metadata"/>
-      <Option value="zbirjednostekksrg" name="name" type="QString"/>
-      <Option value="vector" name="parameter_type" type="QString"/>
+      <Option type="bool" name="multiline" value="false"/>
+      <Option type="QString" name="name" value="nazwaunikalnegoidentyfikatorajednostki"/>
+      <Option type="QString" name="parameter_type" value="string"/>
+    </Option>
+    <Option type="Map" name="obszarwaciwocimiejscowej">
+      <Option type="List" name="data_types">
+        <Option type="int" value="2"/>
+      </Option>
+      <Option type="invalid" name="default"/>
+      <Option type="invalid" name="defaultGui"/>
+      <Option type="QString" name="description" value="Obszar właściwości miejscowej"/>
+      <Option type="int" name="flags" value="0"/>
+      <Option type="QString" name="help" value=""/>
+      <Option name="metadata"/>
+      <Option type="QString" name="name" value="obszarwaciwocimiejscowej"/>
+      <Option type="QString" name="parameter_type" value="vector"/>
+    </Option>
+    <Option type="Map" name="obwodyspisoweludnoci">
+      <Option type="List" name="data_types">
+        <Option type="int" value="2"/>
+      </Option>
+      <Option type="invalid" name="default"/>
+      <Option type="invalid" name="defaultGui"/>
+      <Option type="QString" name="description" value="Obwody spisowe ludności"/>
+      <Option type="int" name="flags" value="0"/>
+      <Option type="QString" name="help" value=""/>
+      <Option name="metadata"/>
+      <Option type="QString" name="name" value="obwodyspisoweludnoci"/>
+      <Option type="QString" name="parameter_type" value="vector"/>
+    </Option>
+    <Option type="Map" name="zbirdanychsieciowych">
+      <Option type="List" name="data_types">
+        <Option type="int" value="1"/>
+      </Option>
+      <Option type="invalid" name="default"/>
+      <Option type="invalid" name="defaultGui"/>
+      <Option type="QString" name="description" value="Zbiór danych sieciowych"/>
+      <Option type="int" name="flags" value="0"/>
+      <Option type="QString" name="help" value=""/>
+      <Option name="metadata"/>
+      <Option type="QString" name="name" value="zbirdanychsieciowych"/>
+      <Option type="QString" name="parameter_type" value="vector"/>
+    </Option>
+    <Option type="Map" name="zbirjednostekksrg">
+      <Option type="List" name="data_types">
+        <Option type="int" value="0"/>
+      </Option>
+      <Option type="invalid" name="default"/>
+      <Option type="invalid" name="defaultGui"/>
+      <Option type="QString" name="description" value="Jednostki KSRG"/>
+      <Option type="int" name="flags" value="0"/>
+      <Option type="QString" name="help" value=""/>
+      <Option name="metadata"/>
+      <Option type="QString" name="name" value="zbirjednostekksrg"/>
+      <Option type="QString" name="parameter_type" value="vector"/>
     </Option>
   </Option>
-  <Option name="parameters" type="Map">
-    <Option name="czasws" type="Map">
-      <Option value="czasws" name="component_description" type="QString"/>
-      <Option value="594" name="component_pos_x" type="double"/>
-      <Option value="29" name="component_pos_y" type="double"/>
-      <Option value="czasws" name="name" type="QString"/>
+  <Option name="parameterOrder"/>
+  <Option type="Map" name="parameters">
+    <Option type="Map" name="czasws">
+      <Option type="QString" name="color" value=""/>
+      <Option type="Map" name="comment">
+        <Option type="QString" name="color" value=""/>
+        <Option type="QString" name="component_description" value=""/>
+        <Option type="double" name="component_height" value="30"/>
+        <Option type="double" name="component_pos_x" value="0"/>
+        <Option type="double" name="component_pos_y" value="0"/>
+        <Option type="double" name="component_width" value="200"/>
+        <Option type="bool" name="outputs_collapsed" value="false"/>
+        <Option type="bool" name="parameters_collapsed" value="false"/>
+      </Option>
+      <Option type="QString" name="component_description" value="czasws"/>
+      <Option type="double" name="component_height" value="30"/>
+      <Option type="double" name="component_pos_x" value="594"/>
+      <Option type="double" name="component_pos_y" value="29"/>
+      <Option type="double" name="component_width" value="200"/>
+      <Option type="QString" name="name" value="czasws"/>
+      <Option type="bool" name="outputs_collapsed" value="false"/>
+      <Option type="bool" name="parameters_collapsed" value="false"/>
     </Option>
-    <Option name="nazwaunikalnegoidentyfikatorajednostki" type="Map">
-      <Option value="nazwaunikalnegoidentyfikatorajednostki" name="component_description" type="QString"/>
-      <Option value="214" name="component_pos_x" type="double"/>
-      <Option value="70" name="component_pos_y" type="double"/>
-      <Option value="nazwaunikalnegoidentyfikatorajednostki" name="name" type="QString"/>
+    <Option type="Map" name="nazwaunikalnegoidentyfikatorajednostki">
+      <Option type="QString" name="color" value=""/>
+      <Option type="Map" name="comment">
+        <Option type="QString" name="color" value=""/>
+        <Option type="QString" name="component_description" value=""/>
+        <Option type="double" name="component_height" value="30"/>
+        <Option type="double" name="component_pos_x" value="0"/>
+        <Option type="double" name="component_pos_y" value="0"/>
+        <Option type="double" name="component_width" value="200"/>
+        <Option type="bool" name="outputs_collapsed" value="false"/>
+        <Option type="bool" name="parameters_collapsed" value="false"/>
+      </Option>
+      <Option type="QString" name="component_description" value="nazwaunikalnegoidentyfikatorajednostki"/>
+      <Option type="double" name="component_height" value="46"/>
+      <Option type="double" name="component_pos_x" value="123"/>
+      <Option type="double" name="component_pos_y" value="81"/>
+      <Option type="double" name="component_width" value="200"/>
+      <Option type="QString" name="name" value="nazwaunikalnegoidentyfikatorajednostki"/>
+      <Option type="bool" name="outputs_collapsed" value="false"/>
+      <Option type="bool" name="parameters_collapsed" value="false"/>
     </Option>
-    <Option name="obszarwaciwocimiejscowej" type="Map">
-      <Option value="obszarwaciwocimiejscowej" name="component_description" type="QString"/>
-      <Option value="155" name="component_pos_x" type="double"/>
-      <Option value="302" name="component_pos_y" type="double"/>
-      <Option value="obszarwaciwocimiejscowej" name="name" type="QString"/>
+    <Option type="Map" name="obszarwaciwocimiejscowej">
+      <Option type="QString" name="color" value=""/>
+      <Option type="Map" name="comment">
+        <Option type="QString" name="color" value=""/>
+        <Option type="QString" name="component_description" value=""/>
+        <Option type="double" name="component_height" value="30"/>
+        <Option type="double" name="component_pos_x" value="0"/>
+        <Option type="double" name="component_pos_y" value="0"/>
+        <Option type="double" name="component_width" value="200"/>
+        <Option type="bool" name="outputs_collapsed" value="false"/>
+        <Option type="bool" name="parameters_collapsed" value="false"/>
+      </Option>
+      <Option type="QString" name="component_description" value="obszarwaciwocimiejscowej"/>
+      <Option type="double" name="component_height" value="52.34778012684989"/>
+      <Option type="double" name="component_pos_x" value="834.3953125"/>
+      <Option type="double" name="component_pos_y" value="201.26204743657505"/>
+      <Option type="double" name="component_width" value="200"/>
+      <Option type="QString" name="name" value="obszarwaciwocimiejscowej"/>
+      <Option type="bool" name="outputs_collapsed" value="false"/>
+      <Option type="bool" name="parameters_collapsed" value="false"/>
     </Option>
-    <Option name="obwodyspisoweludnoci" type="Map">
-      <Option value="obwodyspisoweludnoci" name="component_description" type="QString"/>
-      <Option value="442" name="component_pos_x" type="double"/>
-      <Option value="619" name="component_pos_y" type="double"/>
-      <Option value="obwodyspisoweludnoci" name="name" type="QString"/>
+    <Option type="Map" name="obwodyspisoweludnoci">
+      <Option type="QString" name="color" value=""/>
+      <Option type="Map" name="comment">
+        <Option type="QString" name="color" value=""/>
+        <Option type="QString" name="component_description" value=""/>
+        <Option type="double" name="component_height" value="30"/>
+        <Option type="double" name="component_pos_x" value="0"/>
+        <Option type="double" name="component_pos_y" value="0"/>
+        <Option type="double" name="component_width" value="200"/>
+        <Option type="bool" name="outputs_collapsed" value="false"/>
+        <Option type="bool" name="parameters_collapsed" value="false"/>
+      </Option>
+      <Option type="QString" name="component_description" value="obwodyspisoweludnoci"/>
+      <Option type="double" name="component_height" value="66.00475687103597"/>
+      <Option type="double" name="component_pos_x" value="622.0325184989429"/>
+      <Option type="double" name="component_pos_y" value="630.0015525898522"/>
+      <Option type="double" name="component_width" value="200"/>
+      <Option type="QString" name="name" value="obwodyspisoweludnoci"/>
+      <Option type="bool" name="outputs_collapsed" value="false"/>
+      <Option type="bool" name="parameters_collapsed" value="false"/>
     </Option>
-    <Option name="zbirdanychsieciowych" type="Map">
-      <Option value="zbirdanychsieciowych" name="component_description" type="QString"/>
-      <Option value="466" name="component_pos_x" type="double"/>
-      <Option value="69" name="component_pos_y" type="double"/>
-      <Option value="zbirdanychsieciowych" name="name" type="QString"/>
+    <Option type="Map" name="zbirdanychsieciowych">
+      <Option type="QString" name="color" value=""/>
+      <Option type="Map" name="comment">
+        <Option type="QString" name="color" value=""/>
+        <Option type="QString" name="component_description" value=""/>
+        <Option type="double" name="component_height" value="30"/>
+        <Option type="double" name="component_pos_x" value="0"/>
+        <Option type="double" name="component_pos_y" value="0"/>
+        <Option type="double" name="component_width" value="200"/>
+        <Option type="bool" name="outputs_collapsed" value="false"/>
+        <Option type="bool" name="parameters_collapsed" value="false"/>
+      </Option>
+      <Option type="QString" name="component_description" value="zbirdanychsieciowych"/>
+      <Option type="double" name="component_height" value="30"/>
+      <Option type="double" name="component_pos_x" value="371"/>
+      <Option type="double" name="component_pos_y" value="26"/>
+      <Option type="double" name="component_width" value="200"/>
+      <Option type="QString" name="name" value="zbirdanychsieciowych"/>
+      <Option type="bool" name="outputs_collapsed" value="false"/>
+      <Option type="bool" name="parameters_collapsed" value="false"/>
     </Option>
-    <Option name="zbirjednostekksrg" type="Map">
-      <Option value="zbirjednostekksrg" name="component_description" type="QString"/>
-      <Option value="126" name="component_pos_x" type="double"/>
-      <Option value="27" name="component_pos_y" type="double"/>
-      <Option value="zbirjednostekksrg" name="name" type="QString"/>
+    <Option type="Map" name="zbirjednostekksrg">
+      <Option type="QString" name="color" value=""/>
+      <Option type="Map" name="comment">
+        <Option type="QString" name="color" value=""/>
+        <Option type="QString" name="component_description" value=""/>
+        <Option type="double" name="component_height" value="30"/>
+        <Option type="double" name="component_pos_x" value="0"/>
+        <Option type="double" name="component_pos_y" value="0"/>
+        <Option type="double" name="component_width" value="200"/>
+        <Option type="bool" name="outputs_collapsed" value="false"/>
+        <Option type="bool" name="parameters_collapsed" value="false"/>
+      </Option>
+      <Option type="QString" name="component_description" value="zbirjednostekksrg"/>
+      <Option type="double" name="component_height" value="30"/>
+      <Option type="double" name="component_pos_x" value="126"/>
+      <Option type="double" name="component_pos_y" value="27"/>
+      <Option type="double" name="component_width" value="200"/>
+      <Option type="QString" name="name" value="zbirjednostekksrg"/>
+      <Option type="bool" name="outputs_collapsed" value="false"/>
+      <Option type="bool" name="parameters_collapsed" value="false"/>
     </Option>
   </Option>
 </Option>
