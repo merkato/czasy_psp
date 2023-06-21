@@ -1,0 +1,332 @@
+<!DOCTYPE model>
+<Option type="Map">
+  <Option type="Map" name="children">
+    <Option type="Map" name="qneat3:isoareaaspointcloudfromlayer_1">
+      <Option type="bool" name="active" value="true"/>
+      <Option name="alg_config"/>
+      <Option type="QString" name="alg_id" value="qneat3:isoareaaspointcloudfromlayer"/>
+      <Option type="QString" name="color" value=""/>
+      <Option type="Map" name="comment">
+        <Option type="QString" name="color" value=""/>
+        <Option type="QString" name="component_description" value=""/>
+        <Option type="double" name="component_height" value="30"/>
+        <Option type="double" name="component_pos_x" value="682"/>
+        <Option type="double" name="component_pos_y" value="72"/>
+        <Option type="double" name="component_width" value="200"/>
+        <Option type="bool" name="outputs_collapsed" value="true"/>
+        <Option type="bool" name="parameters_collapsed" value="true"/>
+      </Option>
+      <Option type="QString" name="component_description" value="Wyliczenie Prognozowanego czasu dotarcia"/>
+      <Option type="double" name="component_height" value="70"/>
+      <Option type="double" name="component_pos_x" value="482"/>
+      <Option type="double" name="component_pos_y" value="177"/>
+      <Option type="double" name="component_width" value="200"/>
+      <Option name="dependencies"/>
+      <Option type="QString" name="id" value="qneat3:isoareaaspointcloudfromlayer_1"/>
+      <Option type="Map" name="outputs">
+        <Option type="Map" name="Czas dotarcia">
+          <Option type="QString" name="child_id" value="qneat3:isoareaaspointcloudfromlayer_1"/>
+          <Option type="QString" name="color" value=""/>
+          <Option type="Map" name="comment">
+            <Option type="QString" name="color" value=""/>
+            <Option type="QString" name="component_description" value=""/>
+            <Option type="double" name="component_height" value="60"/>
+            <Option type="double" name="component_pos_x" value="0"/>
+            <Option type="double" name="component_pos_y" value="0"/>
+            <Option type="double" name="component_width" value="100"/>
+            <Option type="bool" name="outputs_collapsed" value="true"/>
+            <Option type="bool" name="parameters_collapsed" value="true"/>
+          </Option>
+          <Option type="QString" name="component_description" value="Czas dotarcia"/>
+          <Option type="double" name="component_height" value="30"/>
+          <Option type="double" name="component_pos_x" value="0"/>
+          <Option type="double" name="component_pos_y" value="0"/>
+          <Option type="double" name="component_width" value="200"/>
+          <Option type="invalid" name="default_value"/>
+          <Option type="bool" name="mandatory" value="false"/>
+          <Option type="QString" name="name" value="Czas dotarcia"/>
+          <Option type="QString" name="output_name" value="OUTPUT"/>
+          <Option type="bool" name="outputs_collapsed" value="true"/>
+          <Option type="bool" name="parameters_collapsed" value="true"/>
+        </Option>
+      </Option>
+      <Option type="bool" name="outputs_collapsed" value="true"/>
+      <Option type="bool" name="parameters_collapsed" value="true"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="DEFAULT_DIRECTION">
+          <Option type="Map">
+            <Option type="int" name="source" value="2"/>
+            <Option type="int" name="static_value" value="0"/>
+          </Option>
+        </Option>
+        <Option type="List" name="DEFAULT_SPEED">
+          <Option type="Map">
+            <Option type="int" name="source" value="2"/>
+            <Option type="double" name="static_value" value="15"/>
+          </Option>
+        </Option>
+        <Option type="List" name="DIRECTION_FIELD">
+          <Option type="Map">
+            <Option type="int" name="source" value="2"/>
+            <Option type="QString" name="static_value" value="oneway"/>
+          </Option>
+        </Option>
+        <Option type="List" name="DISPATCH_COST">
+          <Option type="Map">
+            <Option type="QString" name="parameter_name" value="czas_dysponowania"/>
+            <Option type="int" name="source" value="0"/>
+          </Option>
+        </Option>
+        <Option type="List" name="ENTRY_COST_CALCULATION_METHOD">
+          <Option type="Map">
+            <Option type="int" name="source" value="2"/>
+            <Option type="int" name="static_value" value="1"/>
+          </Option>
+        </Option>
+        <Option type="List" name="ID_FIELD">
+          <Option type="Map">
+            <Option type="QString" name="parameter_name" value="pole_identyfikatora_w_tabeli_lokalizacji_jednostek"/>
+            <Option type="int" name="source" value="0"/>
+          </Option>
+        </Option>
+        <Option type="List" name="INPUT">
+          <Option type="Map">
+            <Option type="QString" name="parameter_name" value="sie"/>
+            <Option type="int" name="source" value="0"/>
+          </Option>
+        </Option>
+        <Option type="List" name="MAX_DIST">
+          <Option type="Map">
+            <Option type="int" name="source" value="2"/>
+            <Option type="double" name="static_value" value="1500"/>
+          </Option>
+        </Option>
+        <Option type="List" name="SPEED_FIELD">
+          <Option type="Map">
+            <Option type="int" name="source" value="2"/>
+            <Option type="QString" name="static_value" value="vmax"/>
+          </Option>
+        </Option>
+        <Option type="List" name="START_POINTS">
+          <Option type="Map">
+            <Option type="QString" name="parameter_name" value="lokalizacjajednostek"/>
+            <Option type="int" name="source" value="0"/>
+          </Option>
+        </Option>
+        <Option type="List" name="STRATEGY">
+          <Option type="Map">
+            <Option type="int" name="source" value="2"/>
+            <Option type="int" name="static_value" value="1"/>
+          </Option>
+        </Option>
+        <Option type="List" name="TOLERANCE">
+          <Option type="Map">
+            <Option type="int" name="source" value="2"/>
+            <Option type="double" name="static_value" value="5"/>
+          </Option>
+        </Option>
+        <Option type="List" name="VALUE_BACKWARD">
+          <Option type="Map">
+            <Option type="int" name="source" value="2"/>
+            <Option type="QString" name="static_value" value="T"/>
+          </Option>
+        </Option>
+        <Option type="List" name="VALUE_BOTH">
+          <Option type="Map">
+            <Option type="int" name="source" value="2"/>
+            <Option type="QString" name="static_value" value="B"/>
+          </Option>
+        </Option>
+        <Option type="List" name="VALUE_FORWARD">
+          <Option type="Map">
+            <Option type="int" name="source" value="2"/>
+            <Option type="QString" name="static_value" value="F"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+  </Option>
+  <Option name="designerParameterValues"/>
+  <Option name="groupBoxes"/>
+  <Option type="Map" name="help">
+    <Option type="QString" name="ALG_CREATOR" value="Tomasz Nycz, GIS w Górach"/>
+    <Option type="QString" name="ALG_DESC" value="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xa;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;style type=&quot;text/css&quot;>&#xa;p, li { white-space: pre-wrap; }&#xa;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'Noto Sans'; font-size:9pt; font-weight:400; font-style:normal;&quot;>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>Algorytm i model pozwalają na obliczenie warstwy punktowej prognozowanego czasu dotarcia do węzłów sieci&lt;/p>&lt;/body>&lt;/html>"/>
+    <Option type="QString" name="ALG_HELP_CREATOR" value="Tomasz Nycz"/>
+    <Option type="QString" name="ALG_VERSION" value="1.1"/>
+    <Option type="QString" name="EXAMPLES" value="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xa;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;style type=&quot;text/css&quot;>&#xa;p, li { white-space: pre-wrap; }&#xa;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'Noto Sans'; font-size:9pt; font-weight:400; font-style:normal;&quot;>&#xa;&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>&lt;br />&lt;/p>&lt;/body>&lt;/html>"/>
+    <Option type="QString" name="HELP_URL" value=""/>
+    <Option type="QString" name="SHORT_DESCRIPTION" value=""/>
+    <Option type="QString" name="czas_dysponowania" value="Nazwa pola atrybutowego w warstwie lokalizacji jednostek, opisującego czas w sekundach potrzebny do osiągnięcia gotowości do wyjazdu (czas dysponowania). Pozwala to zróżnicować zasięg jednostki zależnie od jej statusu w KSRG."/>
+    <Option type="QString" name="lokalizacjajednostek" value="Warstwa wektorowa (punktowa) w której przechowujemy lokalizacje punktów startowych analizy - jednostek ochrony przeciwpożarowej. Warstwa oprócz geometrii powinna posiadać co najmniej pole identyfikatora (np. nazwa jednostki, lub numer w SWD-ST)"/>
+    <Option type="QString" name="native:clip_1:Obszary chronione" value="Warstwa wektorowa zawierająca poligony obszarów chronionych tj.  obszarów w granicach których, niezależnie od podziału administracyjnego, siły i środki podmiotu ksrg właściwe dla rodzaju zagrożenia przybędą do miejsca zdarzenia w najkrótszym czasie"/>
+    <Option type="QString" name="obszarbadawczy" value="Obszar ograniczający wykonywaną analizę. Najczęściej będzie to obszar administracyjny danej jednostki nadrzędnej (np. granica powiatu). "/>
+    <Option type="QString" name="pole_identyfikatora_w_tabeli_lokalizacji_jednostek" value="Nazwa pola atrybutowego w którym przechowywany jest unikalny identyfikator jednostki. Może to być dowolny ciąg znakowy lub liczba."/>
+    <Option type="QString" name="sie" value="Warstwa wektorowa (liniowa), w której oprócz geometrii istnieje co najmniej pole atrybutowe vmax. Warstwę tą można przygotować narzędziami preprocessingu udostępnionymi w tym repozytorium"/>
+  </Option>
+  <Option type="QString" name="internal_version" value="Version1"/>
+  <Option name="modelVariables"/>
+  <Option type="QString" name="model_group" value="Analizy sieciowe"/>
+  <Option type="QString" name="model_name" value="Czas dotarcia"/>
+  <Option type="Map" name="parameterDefinitions">
+    <Option type="Map" name="czas_dysponowania">
+      <Option type="QString" name="default" value="gotowosc"/>
+      <Option type="invalid" name="defaultGui"/>
+      <Option type="QString" name="description" value="Czas dysponowania"/>
+      <Option type="int" name="flags" value="8"/>
+      <Option type="QString" name="help" value="Nazwa pola atrybutowego w warstwie lokalizacji jednostek, opisującego czas w sekundach potrzebny do osiągnięcia gotowości do wyjazdu (czas dysponowania). Pozwala to zróżnicować zasięg jednostki zależnie od jej statusu w KSRG."/>
+      <Option name="metadata"/>
+      <Option type="bool" name="multiline" value="false"/>
+      <Option type="QString" name="name" value="czas_dysponowania"/>
+      <Option type="QString" name="parameter_type" value="string"/>
+    </Option>
+    <Option type="Map" name="lokalizacjajednostek">
+      <Option type="List" name="data_types">
+        <Option type="int" value="0"/>
+      </Option>
+      <Option type="invalid" name="default"/>
+      <Option type="invalid" name="defaultGui"/>
+      <Option type="QString" name="description" value="Lokalizacja jednostek"/>
+      <Option type="int" name="flags" value="0"/>
+      <Option type="QString" name="help" value="Warstwa wektorowa (punktowa) w której przechowujemy lokalizacje punktów startowych analizy - jednostek ochrony przeciwpożarowej. Warstwa oprócz geometrii powinna posiadać co najmniej pole identyfikatora (np. nazwa jednostki, lub numer w SWD-ST)"/>
+      <Option name="metadata"/>
+      <Option type="QString" name="name" value="lokalizacjajednostek"/>
+      <Option type="QString" name="parameter_type" value="vector"/>
+    </Option>
+    <Option type="Map" name="pole_identyfikatora_w_tabeli_lokalizacji_jednostek">
+      <Option type="QString" name="default" value="nazwa"/>
+      <Option type="invalid" name="defaultGui"/>
+      <Option type="QString" name="description" value="Pole identyfikatora (w tabeli lokalizacji jednostek)"/>
+      <Option type="int" name="flags" value="0"/>
+      <Option type="QString" name="help" value="Nazwa pola atrybutowego w którym przechowywany jest unikalny identyfikator jednostki. Może to być dowolny ciąg znakowy lub liczba."/>
+      <Option name="metadata"/>
+      <Option type="bool" name="multiline" value="false"/>
+      <Option type="QString" name="name" value="pole_identyfikatora_w_tabeli_lokalizacji_jednostek"/>
+      <Option type="QString" name="parameter_type" value="string"/>
+    </Option>
+    <Option type="Map" name="qneat3:isoareaaspointcloudfromlayer_1:Czas dotarcia">
+      <Option type="bool" name="create_by_default" value="true"/>
+      <Option type="int" name="data_type" value="0"/>
+      <Option type="invalid" name="default"/>
+      <Option type="invalid" name="defaultGui"/>
+      <Option type="QString" name="description" value="Czas dotarcia"/>
+      <Option type="int" name="flags" value="0"/>
+      <Option type="QString" name="help" value=""/>
+      <Option type="Map" name="metadata">
+        <Option type="QString" name="_modelChildId" value="qneat3:isoareaaspointcloudfromlayer_1"/>
+        <Option type="QString" name="_modelChildOutputName" value="Czas dotarcia"/>
+        <Option type="QString" name="_modelChildProvider" value="qneat3"/>
+      </Option>
+      <Option type="QString" name="name" value="qneat3:isoareaaspointcloudfromlayer_1:Czas dotarcia"/>
+      <Option type="QString" name="parameter_type" value="sink"/>
+      <Option type="bool" name="supports_append" value="false"/>
+      <Option type="bool" name="supports_non_file_outputs" value="true"/>
+    </Option>
+    <Option type="Map" name="sie">
+      <Option type="List" name="data_types">
+        <Option type="int" value="1"/>
+      </Option>
+      <Option type="invalid" name="default"/>
+      <Option type="invalid" name="defaultGui"/>
+      <Option type="QString" name="description" value="Sieć drogowa"/>
+      <Option type="int" name="flags" value="0"/>
+      <Option type="QString" name="help" value="Warstwa wektorowa (liniowa), w której oprócz geometrii istnieje co najmniej pole atrybutowe vmax. Warstwę tą można przygotować narzędziami preprocessingu udostępnionymi w tym repozytorium"/>
+      <Option name="metadata"/>
+      <Option type="QString" name="name" value="sie"/>
+      <Option type="QString" name="parameter_type" value="vector"/>
+    </Option>
+  </Option>
+  <Option type="StringList" name="parameterOrder">
+    <Option type="QString" value="lokalizacjajednostek"/>
+    <Option type="QString" value="obszarbadawczy"/>
+    <Option type="QString" value="pole_identyfikatora_w_tabeli_lokalizacji_jednostek"/>
+    <Option type="QString" value="sie"/>
+    <Option type="QString" value="idobszaru (2)"/>
+    <Option type="QString" value="idobszaru (3)"/>
+  </Option>
+  <Option type="Map" name="parameters">
+    <Option type="Map" name="czas_dysponowania">
+      <Option type="QString" name="color" value=""/>
+      <Option type="Map" name="comment">
+        <Option type="QString" name="color" value="197,222,197,255"/>
+        <Option type="QString" name="component_description" value="Jednostki KSRG mogą mieć różne czasy gotowości do rozpoczęcia wyjazdu (czas dysponowania). Należy wskazać pole atrybutowe w którym przechowujemy wartość w sekundach."/>
+        <Option type="double" name="component_height" value="60"/>
+        <Option type="double" name="component_pos_x" value="190"/>
+        <Option type="double" name="component_pos_y" value="300"/>
+        <Option type="double" name="component_width" value="200"/>
+        <Option type="bool" name="outputs_collapsed" value="false"/>
+        <Option type="bool" name="parameters_collapsed" value="false"/>
+      </Option>
+      <Option type="QString" name="component_description" value="czas_dysponowania"/>
+      <Option type="double" name="component_height" value="35"/>
+      <Option type="double" name="component_pos_x" value="190"/>
+      <Option type="double" name="component_pos_y" value="227.5"/>
+      <Option type="double" name="component_width" value="200"/>
+      <Option type="QString" name="name" value="czas_dysponowania"/>
+      <Option type="bool" name="outputs_collapsed" value="false"/>
+      <Option type="bool" name="parameters_collapsed" value="false"/>
+    </Option>
+    <Option type="Map" name="lokalizacjajednostek">
+      <Option type="QString" name="color" value=""/>
+      <Option type="Map" name="comment">
+        <Option type="QString" name="color" value=""/>
+        <Option type="QString" name="component_description" value=""/>
+        <Option type="double" name="component_height" value="30"/>
+        <Option type="double" name="component_pos_x" value="0"/>
+        <Option type="double" name="component_pos_y" value="0"/>
+        <Option type="double" name="component_width" value="200"/>
+        <Option type="bool" name="outputs_collapsed" value="false"/>
+        <Option type="bool" name="parameters_collapsed" value="false"/>
+      </Option>
+      <Option type="QString" name="component_description" value="lokalizacjajednostek"/>
+      <Option type="double" name="component_height" value="30"/>
+      <Option type="double" name="component_pos_x" value="190"/>
+      <Option type="double" name="component_pos_y" value="15"/>
+      <Option type="double" name="component_width" value="200"/>
+      <Option type="QString" name="name" value="lokalizacjajednostek"/>
+      <Option type="bool" name="outputs_collapsed" value="false"/>
+      <Option type="bool" name="parameters_collapsed" value="false"/>
+    </Option>
+    <Option type="Map" name="pole_identyfikatora_w_tabeli_lokalizacji_jednostek">
+      <Option type="QString" name="color" value=""/>
+      <Option type="Map" name="comment">
+        <Option type="QString" name="color" value=""/>
+        <Option type="QString" name="component_description" value=""/>
+        <Option type="double" name="component_height" value="30"/>
+        <Option type="double" name="component_pos_x" value="0"/>
+        <Option type="double" name="component_pos_y" value="0"/>
+        <Option type="double" name="component_width" value="200"/>
+        <Option type="bool" name="outputs_collapsed" value="false"/>
+        <Option type="bool" name="parameters_collapsed" value="false"/>
+      </Option>
+      <Option type="QString" name="component_description" value="pole_identyfikatora_w_tabeli_lokalizacji_jednostek"/>
+      <Option type="double" name="component_height" value="65"/>
+      <Option type="double" name="component_pos_x" value="190"/>
+      <Option type="double" name="component_pos_y" value="152.5"/>
+      <Option type="double" name="component_width" value="200"/>
+      <Option type="QString" name="name" value="pole_identyfikatora_w_tabeli_lokalizacji_jednostek"/>
+      <Option type="bool" name="outputs_collapsed" value="false"/>
+      <Option type="bool" name="parameters_collapsed" value="false"/>
+    </Option>
+    <Option type="Map" name="sie">
+      <Option type="QString" name="color" value=""/>
+      <Option type="Map" name="comment">
+        <Option type="QString" name="color" value=""/>
+        <Option type="QString" name="component_description" value=""/>
+        <Option type="double" name="component_height" value="30"/>
+        <Option type="double" name="component_pos_x" value="0"/>
+        <Option type="double" name="component_pos_y" value="0"/>
+        <Option type="double" name="component_width" value="200"/>
+        <Option type="bool" name="outputs_collapsed" value="false"/>
+        <Option type="bool" name="parameters_collapsed" value="false"/>
+      </Option>
+      <Option type="QString" name="component_description" value="sie"/>
+      <Option type="double" name="component_height" value="30"/>
+      <Option type="double" name="component_pos_x" value="190"/>
+      <Option type="double" name="component_pos_y" value="75"/>
+      <Option type="double" name="component_width" value="200"/>
+      <Option type="QString" name="name" value="sie"/>
+      <Option type="bool" name="outputs_collapsed" value="false"/>
+      <Option type="bool" name="parameters_collapsed" value="false"/>
+    </Option>
+  </Option>
+</Option>
